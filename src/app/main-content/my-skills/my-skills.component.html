@@ -1,0 +1,35 @@
+<section id="skills">
+  <h1>{{ 'skills.title' | translate }}</h1>
+
+  <div class="content">
+    <div class="icons">
+      @for (item of mySkillsData.skillIcons; track $index) {
+      <span><img [src]="item.path" [alt]="item.alt"> {{item.skillText}} </span>
+      }
+    </div>
+
+    <div class="learningContainer">
+      @for (userName of inputBoxData.userNames; track $index) {
+      <h3>{{userName.name}}</h3>
+      }
+      <span class="title">{{ 'currentLearning.templateText' | translate }}</span>
+      <div class="languageIcons">
+        @for (item of inputBoxData.learning; track $index) {
+        <span class="currentlyLearning">
+          <img class="iconImage" [src]="item.iconPath" alt="">
+          {{item.language}}
+        </span>
+        }
+      </div>
+
+      <span>
+        {{ 'currentLearning.inputText' | translate }}
+      </span>
+      <!--   @for (projectLink of inputBoxData.link; track $index) {} -->
+    </div>
+  </div>
+
+
+  <!--     <app-input-box [inputBoxData]="inputBoxData"></app-input-box> -->
+
+</section>

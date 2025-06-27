@@ -1,0 +1,290 @@
+@import "../../mixins.scss";
+
+section {
+  @include dFlex(center, center);
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+
+  > span {
+    width: 44.5rem;
+  }
+}
+
+.input {
+  @include dFlex(normal, normal);
+  margin-top: 5rem;
+  width: 100%;
+  gap: 1rem;
+}
+.formularInput {
+  @include dFlex(space-between, center);
+  width: 100%;
+}
+
+.messageInput {
+  @include dFlex(start, start);
+  flex-direction: column;
+
+  .messageField {
+    width: 91.1rem;
+    height: 14.6rem;
+    background-color: #262e34;
+    border: solid 0.1rem #89bcd9;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+    text-align:start &:focus {
+      background-color: #64879b36; // not working
+    }
+  }
+}
+
+.yourName {
+  margin-top: 4rem;
+  @include dFlex(center, start);
+  flex-direction: column;
+
+  > img {
+    position: absolute;
+    padding-left: 40rem;
+  }
+}
+
+.textField {
+  @include dFlex(center, start);
+  background-color: #262e34;
+  width: 44.5rem;
+  height: 6rem;
+  border: solid 0.1rem #89bcd9;
+  border-radius: 3rem;
+  margin-bottom: 2rem;
+}
+
+span {
+  font-size: 1.4rem;
+  color: #89bcd9;
+  padding-left: 2rem;
+  font-family: "Josefin Sans";
+  padding-bottom: 0.5rem;
+}
+
+p {
+  font-family: "Josefin Sans";
+}
+
+div {
+  font-family: "Josefin Sans";
+}
+
+#content {
+  @include dFlex(center, center);
+  flex-direction: column;
+}
+
+.text {
+  @include dFlex(center, start);
+  flex-direction: column;
+  width: 50%;
+
+  > p {
+    width: 44rem;
+  }
+}
+
+.contactInfo {
+  @include dFlex(start, start);
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .telInfoInput {
+    cursor: pointer;
+    @include dFlex(start, start); //MIXIN ERSTELLEN
+    align-items: center;
+    gap: 1.5rem;
+
+    .phoneImage {
+      @include dFlex(center, center);
+      box-shadow: none;
+      width: 32px;
+      height: 32px;
+      background: url("/images/sections/contactMe/phoneDefault.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &:hover {
+      color: #7aa7c0;
+
+      > .phoneImage {
+        background: url("/images/sections/contactMe/phoneHover.png");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .mailInfoInput {
+    cursor: pointer;
+    @include dFlex(start, start); //MIXIN ERSTELLEN
+    align-items: center;
+    gap: 1.5rem;
+
+    .emailImage {
+      @include dFlex(center, center);
+      box-shadow: none;
+      width: 32px;
+      height: 32px;
+      background: url("/images/sections/contactMe/mailDefault.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      color: #64879b;
+
+      > .emailImage {
+        background: url("/images/sections/contactMe/mailHover.png");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:active {
+      color: #7aa7c0;
+      > .emailImage {
+        background: url("/images/sections/contactMe/mailClick.png");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .telInfoInput {
+    @include dFlex(start, start);
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+.checkArea {
+  width: 100%;
+  @include dFlex(space-between, center);
+
+  .agreementArea {
+    @include dFlex(start, start);
+    flex-direction: column;
+  }
+
+  .checkBox {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent url("/images/sections/contactMe/defaultElipse.png")
+      center/contain no-repeat;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      background-image: url("/images/sections/contactMe/checkElipse.png");
+    }
+
+    &:checked {
+      background-image: url("/images/sections/contactMe/checkedElipse.png");
+    }
+  }
+  .ng-invalid.submitted {
+    background-image: url("/images/sections/contactMe/errorElipse.png");
+  }
+}
+
+input {
+  font-family: "Josefin Sans";
+z-index: 1;
+  outline: none;
+  font-size: 1.8rem;
+  text-align: start;
+  text-indent: 2rem;
+  vertical-align: top;
+  transition: background-color 0.2s ease;
+  background-color: #262e34;
+
+  &:focus {
+    background-color: #64879b36;
+  }
+}
+
+.submitArea {
+  @include dFlex(end, center);
+  width: 100%;
+
+  .submitButton {
+    padding-right: 1.8rem;
+    width: 10.1rem;
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-size: 1.8rem;
+    background: none;
+    height: 4.8rem;
+    border-radius: 3rem;
+    color: #f8f5ec8e;
+    border: solid 0.1rem #f8f5ec8e;
+  }
+
+  .readyToSubmit {
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+    transition: border 0.5s ease-in-out;
+    transition: background-color 0.2s ease;
+
+    border: solid 0.1rem #89bcd9;
+    color: #89bcd9;
+    &:hover {
+      background-color: #64879b3a;
+    }
+  }
+}
+
+.invalid {
+  border-color: #e44c36;
+}
+
+.errorText {
+  color: #e44c36;
+}
+
+#error_text {
+  color: #e44c36;
+  padding: 0;
+  padding-left: 3.8rem;
+}
+
+#yourMessageField {
+  outline: none;
+  font-size: 1.8rem;
+  text-align: start;
+  text-indent: 2rem;
+  vertical-align: top;
+  transition: background-color 0.2s ease;
+  background-color: #262e34;
+
+  &:focus {
+    background-color: #64879b36;
+  }
+}
+
+#yourMessageField.invalid {
+  border-color: #e44c36;
+}
+
+#privacy {
+  @include dFlex(center, center); //MIXIN ERSTELLEN
+
+  color: #f8f6ec;
+  padding: 0;
+
+  >.privacyText{
+    font-size: 1.4rem;
+  }
+}

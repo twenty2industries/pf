@@ -1,0 +1,129 @@
+@import "../../../app/mixins.scss";
+
+section {
+  margin: 0rem 10rem;
+  @include dFlex(center, center);
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+#content {
+  max-width: 1920px;
+  margin: 0rem 10rem;
+  @include dFlex(space-between, center);
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.devPicture {
+  background: url("../../../../public/images/sections/hero/bgShapeDefault.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59.4rem;
+  height: 71rem;
+  transition: background ease-in-out 0.5s;
+  @include dFlex(center, center);
+
+  &:hover {
+    background: url("../../../../public/images/sections/hero/bgShapeHover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #profilePhoto {
+    margin-top: 23rem;
+    height: auto;
+  }
+}
+
+.heroInput {
+  @include dFlex(center, center);
+  flex-direction: column;
+
+  .arrowDownDefault {
+    background-image: url("../../../../public/images/ui/arrow/arrowDownDefault.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 3.9rem;
+    height: 12rem;
+    transition: background-image ease-in-out 0.5s;
+    &:hover {
+      background-image: url("../../../../public/images/ui/arrow/arrowDownHober.png");
+    }
+  }
+}
+
+.logosContainer {
+  padding-bottom: 5rem;
+  width: 60rem;
+  @include dFlex(end, end);
+  gap: 19.5rem;
+  margin-top: 5rem;
+}
+.socials {
+  gap: 1.2rem;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+
+  .mail,
+  .gitHub,
+  .linkedIn {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .mail {
+    background-image: url("../../../../public/images/socials/mail/mailDefault.png");
+    &:hover {
+      background-image: url("../../../../public/images/socials/mail/mailHover.png");
+    }
+  }
+
+  .gitHub {
+    background-image: url("../../../../public/images/socials/github/githubDefault.png");
+    &:hover {
+      background-image: url("../../../../public/images/socials/github/githubHover.png");
+    }
+  }
+
+  .linkedIn {
+    background-image: url("../../../../public/images/socials/linkedin/linkedinDefault.png");
+    &:hover {
+      background-image: url("../../../../public/images/socials/linkedin/linkedinHover.png");
+    }
+  }
+}
+
+.logo {
+  background-image: url("../../../../public/images/ui/logo/logoDefault.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 7.3rem;
+  width: 15rem;
+  transition: background-image ease-in-out 0.5s;
+  &:hover {
+    background-image: url("../../../../public/images/ui/logo/logoHover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+h1 {
+  font-size: 8.8rem;
+  color: #f8f6ec;
+}
+
+h2 {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 4rem;
+  padding-bottom: 19rem;
+}

@@ -1,0 +1,66 @@
+@import "../../mixins.scss";
+
+footer {
+  @include dFlex(center, center);
+  width: 100%;
+  background-color: #89bcd9;
+
+  > .content {
+    width: 100%;
+    max-width: 1920px;
+    @include dFlex(space-between, center);
+    padding: 0rem 16rem;
+    height: 21.4rem;
+
+    > .legalNotice {
+      @include dFlex(start, start);
+      gap: 0.5rem;
+      flex-direction: column;
+      font-family: "Josefin Sans";
+      color: black;
+    }
+
+    span {
+            font-size: 1.4rem;
+font-family: 'Josefin Sans';
+      color: #2f4655;
+    }
+  }
+
+  .socials {
+    @include dFlex(start, start);
+
+    gap: 1rem;
+  }
+}
+
+  #mail, #github, #linkedin {
+    width: 32px;  
+    height: 32px;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  #mail {
+    background-image: url("../../../../public/images/sections/footer/mailDark.png");
+    &:hover {
+      background-image: url("../../../../public/images/sections/footer/mailHover.png");
+    }
+  }
+
+  #github {
+    background-image: url("../../../../public/images/sections/footer/githubDark.png");
+    &:hover {
+      background-image: url("../../../../public/images/sections/footer/githubHover.png");
+    }
+  }
+
+  #linkedin {
+    background-image: url("../../../../public/images/sections/footer/linkedinDark.png");
+    &:hover {
+      background-image: url("../../../../public/images/sections/footer/linkedinHover.png");
+    }
+  }
+

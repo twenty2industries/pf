@@ -1,0 +1,92 @@
+{
+  "why-me": {
+    "title": "Warum ich",
+    "locationText": "Erster Text für Typing-Effekt",
+    "whyMeText": "Warum begeisterst du dich fürs Programmieren? Du kannst Schlüsselqualifikationen nennen wie: analytisches Denken, Kreativität, Durchhaltevermögen und Teamarbeit. Eine lösungsorientierte Denkweise ist immer wertvoll.",
+    "talkButtonAlt": "Kontakt Button"
+  },
+
+  "header": {
+    "logoAlt": "Logo",
+    "navLinks": {
+      "whyme": "Über mich",
+      "skills": "Fähigkeiten",
+      "projects": "Projekte",
+      "contact": "Kontakt"
+    }
+  },
+
+  "skills": {
+    "title": "Meine Fähigkeiten"
+  },
+
+  "inputBox": {
+    "subject": "Ich lerne aktuell",
+    "inputText": "Zeige, dass du motiviert bist, deine Fähigkeiten stetig zu verbessern, innovative Lösungen umzusetzen und mit neuen Technologien Schritt zu halten."
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "text": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, an welcher Rolle du interessiert bist. Zeige, dass du durch deine Arbeit einen Mehrwert für ihre Projekte schaffst. Beispiel: Zögere nicht, dich mit Jobangeboten oder Möglichkeiten wie zum Beispiel ...",
+
+    "contactInfo": {
+      "email": "SIUSNAROS@test.de",
+      "phone": "0157 123 456 68"
+    },
+
+    "required": {
+      "email": "Deine E-Mail ist erforderlich.",
+      "name": "Dein Name ist erforderlich.",
+      "message": "Deine Nachricht ist erforderlich.",
+      "privacyText": "Bitte akzeptiere die Datenschutzerklärung."
+    },
+
+    "formFields": {
+      "name": {
+        "label": "Ihr Name"
+      },
+      "email": {
+        "label": "Ihre E-Mail"
+      },
+      "message": {
+        "label": "Ihre Nachricht",
+        "privacyText": "Ich habe die <a href=''>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten wie darin beschrieben zu."
+      }
+    },
+
+    "descriptionText": "Kontaktieren Sie mich gerne für Job-Angebote oder Möglichkeiten wie: ... Zeigen Sie, dass Sie Mehrwert durch Ihre Arbeit bringen."
+  },
+
+  "feedback": {
+    "titel": "Brauchen Sie einen Teamplayer? Hier ist, was meine Kolleginnen und Kollegen über mich sagen",
+    "linkText": "Im Profil verlinkt",
+
+    "feedback1": {
+      "userName": "Sahra Müller",
+      "project": "Project ",
+      "projectName": "DA Bubble",
+      "text": "‘’Claudia musste Inhalte entwickeln, formatieren und in Zusammenarbeit mit den Teammitgliedern liefern. Sie ist eine zuverlässige und freundliche Person.‘’",
+      "link": ""
+    },
+
+    "feedback2": {
+      "userName": "James Rugman",
+      "projectName": "Join",
+      "text": "‘’Claudia ist eine zuverlässige und freundliche Person. Arbeitet strukturiert und schreibt klaren Code. Ich empfehle sie als Kollegin.‘’",
+      "link": ""
+    },
+
+    "feedback3": {
+      "userName": "Evelyn Marx",
+      "projectName": "El Polo Loco",
+      "text": "‘’Sie ist ein vertrauenswürdiger Teamplayer und hält Deadlines stressfrei aus. Strukturierte Arbeit und klarer Code.‘’",
+      "link": ""
+    }
+  },
+
+  "currentLearning": {
+        "templateText": "Aktuell lerne ich",
+
+    "inputText": " Dass du motiviert bist, deine Fähigkeiten ständig zu verbessern, innovative Lösungen umzusetzen und über neue Technologien auf dem Laufenden zu bleiben."
+  }
+}

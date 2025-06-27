@@ -1,0 +1,22 @@
+<section id="hero">
+  <div id="content">
+    <div class="devPicture">
+      <img id="profilePhoto" src="../../../../images/profile/profilePhoto.png" alt="">
+    </div>
+    <div class="heroInput">
+      <div class="logosContainer">
+        <div class="logo"> </div>
+        <div class="socials">
+          @for (icon of heroData.socials; track $index) {
+          <div [class]="icon.alt"> </div>
+          }
+        </div>
+      </div>
+      <h1>{{ heroData.text.name }}</h1>
+      <h2>{{ heroData.text.title }}</h2>
+      <a href="#footer">
+        <div class="arrowDownDefault"></div>
+      </a>
+    </div>
+  </div>
+</section>

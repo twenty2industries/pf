@@ -1,0 +1,92 @@
+{
+  "why-me": {
+    "title": "Why me",
+    "locationText": "First text for typing effect",
+    "whyMeText": "Why are you passionate about coding? You can include some key traits like: analytical thinking, creativity, persistence and collaboration. A problem-solving mindset is always nice to have.",
+    "talkButtonAlt": "Talk to me button"
+  },
+
+  "header": {
+    "logoAlt": "Logo",
+    "navLinks": {
+      "whyme": "Why me",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
+  },
+
+  "skills": {
+    "title": "My Skills"
+  },
+
+  "inputBox": {
+    "subject": "I am currently learning",
+    "inputText": "Show that you are motivated to continually improve your skills, implement innovative solutions and stay abreast of new technologies."
+  },
+
+  "contact": {
+    "title": "Contact me",
+    "text": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work. Example: Feel free to get in touch with job offers or opportunities such as: ...",
+    "contactInfo": {
+      "email": "SIUSNAROS@test.de",
+      "phone": "0157 123 456 68"
+    },
+
+    "required": {
+      "email": "Your email is required.",
+      "name": "Your name is required.",
+      "message": "Your message is required.",
+      "privacyText": "Please accept the privacy policy."
+    },
+
+    "formFields": {
+      "name": {
+        "label": "Your name"
+      },
+      "email": {
+        "label": "Your Email"
+      },
+      "message": {
+        "label": "Your message",
+        "privacyText": " I've read the <a href=''>privacy policy</a> and agree to the processing of my data as outlined."
+      }
+    },
+    "descriptionText": "Feel free to get in touch with job offers or opportunities such as: ... Show that you will add value to their projects through your work."
+  },
+
+  "feedback": {
+    "titel": "Need a teamplayer? Here what my colleagues said about me",
+    "linkText": "Linked in Profile",
+
+    "feedback1": {
+      "userName": "Sahra Mueller",
+      "project": "Project ",
+      "projectName": "DA Bubble",
+      "text": "‘’Claudia had to develop, format and deliver content in collaboration with the team members. She is a reliable and friendly person.‘’",
+      "link": "sius naros"
+    },
+
+    "feedback2": {
+      "userName": "James Rugman",
+      "projectName": "Join",
+      "text": "‘’Claudia is a reliable and friendly person. Works in a structured way and write a clear code. I recommend her as a colleague.‘’",
+      "link": "sius naros"
+    },
+
+    "feedback3": {
+      "userName": "Evelyn Marx",
+      "projectName": "El Polo Loco",
+      "text": "‘’She is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code.‘’",
+      "link": "sius naros"
+    }
+  },
+
+  
+  "currentLearning": {
+    "templateText": "I am currently learning",
+    "inputText": " that you are motivated to continually improve your skills, implement innovative solutions and stay abreast of new technologies."
+  }
+
+  
+}
