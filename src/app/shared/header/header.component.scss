@@ -3,11 +3,11 @@
   width: 100%;
   max-width: 1920px;
   @include dFlex(space-between, center);
-  padding: 0rem 16rem;
+  margin: 0rem 16rem;
 }
 
 header {
-  @include dFlex(space-evenly, center);
+  @include dFlex(center, center);
   width: 100%;
   height: 9rem;
   position: sticky;
@@ -67,4 +67,31 @@ header nav a.active {
   background: url("../../../../public/images/sections/header/bgEllipse.png");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 921px) {
+  header{
+    display: none;
+  }
+/*   content{
+    margin: 0rem 5rem;
+  }
+  header {
+    nav {
+      gap: 0rem;
+    }
+  }
+  h1 {
+    font-size: 4.8rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  img {
+    width: 37rem;
+  }
+  .devPicture {
+    height: 52rem;
+  } */
 }

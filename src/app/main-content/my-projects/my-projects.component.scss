@@ -32,6 +32,10 @@ section {
   }
 }
 
+.projectDetailMobile {
+  display: none;
+}
+
 .container {
   @include dFlex(space-evenly, start);
   padding: 3rem 0;
@@ -43,13 +47,12 @@ section {
   @include dFlex(normal, center);
   flex-direction: column;
   font-size: 1.8rem;
-  
+
   > p {
     font-family: "Josefin Sans";
     margin-left: 5rem;
     width: 68rem;
   }
-
 }
 
 .bulletPoints {
@@ -64,8 +67,8 @@ section {
     font-weight: 400;
   }
 
-    >span{
-    font-size: 1.8rem
+  > span {
+    font-size: 1.8rem;
   }
 }
 
@@ -116,8 +119,7 @@ section {
 
 .projectPictures {
   @include dFlex(center, center);
-  width: 45rem;
-  height: 31rem;
+
 
   > img {
     width: 100%;
@@ -147,9 +149,14 @@ section {
   @include dFlex(space-between, center);
   padding: 1rem;
   gap: 2rem;
+
   > img {
     height: 3.6rem;
   }
+}
+
+.buttonAreaMobile {
+  display: none;
 }
 
 span {
@@ -172,4 +179,156 @@ h1 {
   @include dFlex(center, center);
   background-color: #2d383f;
   width: 100%;
+  padding-bottom: 5rem;
+}
+
+.d_none {
+  display: none;
+}
+
+@media (max-width: 1197px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media (max-width: 920px) {
+  .container {
+    padding: 3rem 2rem;
+  }
+
+  .projectContainer {
+    width: 100%;
+  }
+
+  .projectInput {
+    p {
+      margin-left: 0rem;
+    }
+  }
+
+  .bulletPoints {
+    h3 {
+      color: #89bcd9;
+    }
+    .durationText {
+      display: none;
+    }
+  }
+
+  .content {
+    flex-direction: column;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+  }
+
+  .navContent {
+    nav {
+      span {
+        width: 33%;
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  .projectInput {
+    p {
+      display: flex;
+      flex-wrap: wrap;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 656px) {
+  .projectPictures {
+    margin: 0rem 6rem;
+  }
+
+  p {
+    margin-bottom: 3rem;
+  }
+
+  .bulletPoints {
+    padding-bottom: 1rem;
+  }
+
+  span {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    color: #89bcd9;
+  }
+
+  .techText {
+    display: none;
+  }
+
+  .projectDetailMobile {
+    gap: 0.5rem;
+    margin: 2rem 0rem;
+    @include dFlex(center, start);
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  h1 {
+    margin-bottom: 5rem;
+  }
+
+  .buttonArea {
+    display: none;
+  }
+
+  .buttonAreaMobile {
+    @include dFlex(space-between, center);
+    padding: 3rem;
+    width: 30rem;
+
+    .testButton {
+      color: #2d383f;
+      background-color: #89bcd9;
+
+      &:hover {
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .projectPictures {
+    height: auto;
+    img {
+      width: 35rem;
+      height: 21rem;
+    }
+  }
+  
+  span {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .bulletPoints {
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 443px) {
 }

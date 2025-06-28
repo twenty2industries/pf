@@ -82,11 +82,50 @@
     }
   },
 
-  
   "currentLearning": {
     "templateText": "I am currently learning",
     "inputText": " that you are motivated to continually improve your skills, implement innovative solutions and stay abreast of new technologies."
-  }
+  },
 
-  
+  "PROJECTS": {
+    "TITLE": "My Projects",
+    "EL_POLO_LOCO": {
+      "TITLE": "El Polo Loco",
+      "DURATION": "Duration: 4 weeks",
+      "DESCRIPTION": "Jump-and-run game inspired by classic platformers.",
+      "BULLET_POINTS": {
+        "ABOUT_TITLE": "About the project",
+        "ABOUT_CONTENT": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the Chicken.",
+        "WORK_PROCESS_TITLE": "How I have organised my work process",
+        "WORK_PROCESS_CONTENT": "How do you keep your code clean and maintainable? Have you broken the project down into reusable modules or components? Focus on documentation, naming files, variables, classes and testing.",
+        "LEARNINGS_TITLE": "What I have learnt",
+        "LEARNINGS_CONTENT": "As someone who is always trying to learn new technologies, you may have enjoyed working on this project because it allowed you to delve deep into a particular technology. Give details, such as the name of the framework or language you mean."
+      },
+      "URL": "Play Game"
+    },
+    "JOIN": {
+      "TITLE": "Join",
+      "DURATION": "Duration: 5 weeks",
+      "DESCRIPTION": "Task manager inspired by the Kanban System.",
+      "BULLET_POINTS": {
+        "ABOUT_TITLE": "About the project",
+        "ABOUT_CONTENT": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "WORK_PROCESS_TITLE": "How I have organised my work process",
+        "WORK_PROCESS_CONTENT": "How do you keep your code clean and maintainable? Have you broken the project down into reusable modules or components? Focus on documentation, naming files, variables, classes and testing.",
+        "LEARNINGS_TITLE": "My group work experience",
+        "LEARNINGS_CONTENT": "How many people were in the team and what was your role? Describe your tasks in 1-2 sentences. It is nice to mention a good teamwork and cooperation."
+
+      },
+      "URL": "Try it now"
+    },
+    "ONGOING_PROJECT": {
+      "TITLE": "Ongoing Project",
+      "DESCRIPTION": "Task manager inspired by the Kanban System.",
+      "BULLET_POINTS": {
+        "ABOUT_TITLE": "About the project",
+        "ABOUT_CONTENT": "What are you currently working on and what features are you implementing? What is the key to success in your projects? You can mention good planning, code quality and execution. <br><br> Show a desire to learn new technologies and continually improve your skills."
+      },
+      "URL": "Try it now"
+    }
+  }
 }

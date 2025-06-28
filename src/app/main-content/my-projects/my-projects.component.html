@@ -1,52 +1,155 @@
 <section id="projects">
-  <h1>My Projects</h1>
+  <h1>{{ 'PROJECTS.TITLE' | translate }}</h1>
 
   <div class="navContent">
     <nav>
-      @for (project of projectData; track project.id) {
-        <span (click)="selectProject(project.id)" [class.active]="selectedProjectId === project.id">
-          {{project.id}}. {{project.title}}
-        </span>
-      }
+      <span (click)="selectedProject = 'EL_POLO_LOCO'" [class.active]="selectedProject === 'EL_POLO_LOCO'">
+        1. {{ 'PROJECTS.EL_POLO_LOCO.TITLE' | translate }}
+      </span>
+      <span (click)="selectedProject = 'JOIN'" [class.active]="selectedProject === 'JOIN'">
+        2. {{ 'PROJECTS.JOIN.TITLE' | translate }}
+      </span>
+      <span (click)="selectedProject = 'ONGOING_PROJECT'" [class.active]="selectedProject === 'ONGOING_PROJECT'">
+        3. {{ 'PROJECTS.ONGOING_PROJECT.TITLE' | translate }}
+      </span>
     </nav>
   </div>
 
-
   <div class="content">
+    @if (selectedProject === 'EL_POLO_LOCO') {
     <div class="input">
-      @for (project of projectData; track project.id) {
-        @if (project.id === selectedProjectId) {
-        <div class="container">
-          <div class="projectInput">
-            @for (bulletPoint of project.bulletPoints; track $index) {
-                <div class="bulletPoints">
-                  <img src="/images/sections/myProjects/elipse.png" alt="">
-                  <h3>{{bulletPoint.title}}</h3>
-                  @if ($index === 0) {
-                  <span>{{project.duration}}</span>
-                  }
-                </div>
-                <p [innerHTML]="bulletPoint.content"></p>
-              }
-            </div>
-            <div class="projectContainer">
-              <span>Technologies</span>
-              <div class="icons">
-                @for (imgPath of project.technologies; track $index) {
-                <img [src]="imgPath.iconPath" [alt]="imgPath.altText">
-                }
-              </div>
-              <div class="projectPictures">
-                <img [src]="project.image" alt="">
-              </div>
-              <div class="buttonArea">
-                <button class="testButton">Live Test</button>
-                <button>GitHub</button>
-              </div>
-            </div>
+      <div class="container">
+        <div class="projectInput">
+          <div class="bulletPoints">
+            <img src="/images/sections/myProjects/elipse.png" alt="">
+            <h3>{{ 'PROJECTS.EL_POLO_LOCO.BULLET_POINTS.ABOUT_TITLE' | translate }}</h3>
+            <span class="durationText">{{ 'PROJECTS.EL_POLO_LOCO.DURATION' | translate }}</span>
           </div>
-        }
-      }
+          <p [innerHTML]="'PROJECTS.EL_POLO_LOCO.BULLET_POINTS.ABOUT_CONTENT' | translate"></p>
+
+          <div class="bulletPoints">
+            <img src="/images/sections/myProjects/elipse.png" alt="">
+            <h3>{{ 'PROJECTS.EL_POLO_LOCO.BULLET_POINTS.WORK_PROCESS_TITLE' | translate }}</h3>
+          </div>
+          <p [innerHTML]="'PROJECTS.EL_POLO_LOCO.BULLET_POINTS.WORK_PROCESS_CONTENT' | translate"></p>
+
+          <div class="bulletPoints">
+            <img src="/images/sections/myProjects/elipse.png" alt="">
+            <h3>{{ 'PROJECTS.EL_POLO_LOCO.BULLET_POINTS.LEARNINGS_TITLE' | translate }}</h3>
+          </div>
+          <p [innerHTML]="'PROJECTS.EL_POLO_LOCO.BULLET_POINTS.LEARNINGS_CONTENT' | translate"></p>
+        </div>
+
+        <div class="projectContainer">
+          <div class="projectDetailMobile">
+            <h3>{{ 'PROJECTS.EL_POLO_LOCO.TITLE' | translate }}</h3>
+            <span>Technologies: JavaScript, HTML, CSS </span>
+            <span class="durationText">{{ 'PROJECTS.EL_POLO_LOCO.DURATION' | translate }}</span>
+          </div>
+          <span class="techText">Technologies</span>
+          <div class="icons">
+            <img src="../../../../images/sections/mySkills/cssDefault.png">
+            <img src="../../../../images/sections/mySkills/jsDefault.png">
+            <img src="../../../../images/sections/mySkills/htmlDefault.png">
+
+          </div>
+          <div class="projectPictures">
+            <img src="../../../../images/sections/myProjects/elpololoco.png" alt="El Polo Loco Screenshot">
+          </div>
+          <div class="buttonArea">
+            <button class="testButton">{{ 'PROJECTS.EL_POLO_LOCO.URL' | translate }}</button>
+            <button>GitHub</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    }
+
+    @if (selectedProject === 'JOIN') {
+    <div class="input">
+      <div class="container">
+        <div class="projectInput">
+          <div class="bulletPoints">
+            <img src="/images/sections/myProjects/elipse.png" alt="">
+            <h3>{{ 'PROJECTS.JOIN.BULLET_POINTS.ABOUT_TITLE' | translate }}</h3>
+            <span class="durationText">{{ 'PROJECTS.JOIN.DURATION' | translate }}</span>
+          </div>
+          <p [innerHTML]="'PROJECTS.JOIN.BULLET_POINTS.ABOUT_CONTENT' | translate"></p>
+
+          <div class="bulletPoints">
+            <img src="/images/sections/myProjects/elipse.png" alt="">
+            <h3>{{ 'PROJECTS.JOIN.BULLET_POINTS.WORK_PROCESS_TITLE' | translate }}</h3>
+          </div>
+          <p [innerHTML]="'PROJECTS.JOIN.BULLET_POINTS.WORK_PROCESS_CONTENT' | translate"></p>
+
+          <div class="bulletPoints">
+            <img src="/images/sections/myProjects/elipse.png" alt="">
+            <h3>{{ 'PROJECTS.JOIN.BULLET_POINTS.LEARNINGS_TITLE' | translate }}</h3>
+          </div>
+          <p [innerHTML]="'PROJECTS.JOIN.BULLET_POINTS.LEARNINGS_CONTENT' | translate"></p>
+        </div>
+
+        <div class="projectContainer">
+          <div class="projectDetailMobile">
+            <h3>{{ 'PROJECTS.JOIN.TITLE' | translate }}</h3>
+            <span>Technologies: Angular, HTML, CSS </span>
+            <span class="durationText">{{ 'PROJECTS.JOIN.DURATION' | translate }}</span>
+          </div>
+          <span class="techText"> Technologies</span>
+          <div class="icons">
+            <img src="../../../../images/sections/mySkills/angularDefault.png">
+            <img src="../../../../images/sections/mySkills/tsDefault.png">
+            <img src="../../../../images/sections/mySkills/cssDefault.png">
+
+          </div>
+          <div class="projectPictures">
+            <img src="../../../../images/sections/myProjects/join.png" alt="Join Screenshot">
+          </div>
+          <div class="buttonArea">
+            <button class="testButton">{{ 'PROJECTS.JOIN.URL' | translate }}</button>
+            <button>GitHub</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+
+    @if (selectedProject === 'ONGOING_PROJECT') {
+    <div class="input">
+      <div class="container">
+        <div class="projectInput">
+          <div class="bulletPoints">
+            <img src="/images/sections/myProjects/elipse.png" alt="">
+            <h3>{{ 'PROJECTS.ONGOING_PROJECT.BULLET_POINTS.ABOUT_TITLE' | translate }}</h3>
+          </div>
+          <p [innerHTML]="'PROJECTS.ONGOING_PROJECT.BULLET_POINTS.ABOUT_CONTENT' | translate"></p>
+        </div>
+
+        <div class="projectContainer">
+          <div class="projectDetailMobile">
+            <h3>{{ 'PROJECTS.ONGOING_PROJECT.TITLE' | translate }}</h3>
+            <span>Technologies: Angular, TypeScript</span>
+          </div>
+          <span class="techText">Technologies</span>
+          <div class="icons">
+            <img src="../../../../images/sections/mySkills/angularDefault.png">
+            <img src="../../../../images/sections/mySkills/tsDefault.png">
+          </div>
+          <div class="projectPictures">
+            <img src="../../../../images/sections/myProjects/ongoingProject.png" alt="Project Screenshot">
+          </div>
+          <div class="buttonArea">
+            <button class="testButton">{{ 'PROJECTS.EL_POLO_LOCO.URL' | translate }}</button>
+            <button>GitHub</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+    <div class="buttonAreaMobile">
+      <button class="testButton">Live Test</button>
+      <button>GitHub</button>
     </div>
   </div>
 </section>

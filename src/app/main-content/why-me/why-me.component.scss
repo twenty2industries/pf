@@ -19,21 +19,67 @@ div {
   gap: 5rem;
   @include dFlex(center, start);
   width: 100%;
+  flex-wrap: wrap;
 
   > span {
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
     font-size: 1.8rem;
     width: 500px;
     display: flex;
     flex-direction: column;
     align-items: end;
-    
-    >button, a{
+
+    > button,
+    a {
       margin-top: 2rem;
     }
 
     > img {
       margin-top: 2.5rem;
     }
+  }
+}
+
+@media (max-width: 656px) {
+  section {
+    margin: 0rem 2rem;
+    margin-bottom: 10rem;
+    h1 {
+      font-size: 4.8rem;
+      margin-bottom: 5rem;
+    }
+    img {
+      width: 40rem;
+    }
+  }
+  span {
+    text-align: center;
+  }
+  a {
+    display: none;
+  }
+}
+
+@media (max-width: 443px) {
+  section {
+    margin: 0rem 2rem;
+    margin-bottom: 10rem;
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 5rem;
+    }
+    img {
+      width: 33.9rem;
+    }
+  }
+  div {
+    span {
+      text-align: center;
+      font-size: 1.6rem;
+    }
+  }
+
+  a {
+    display: none;
   }
 }

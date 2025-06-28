@@ -13,7 +13,7 @@ import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
 })
 export class HeaderComponent {
   @Input() headerData!: HeaderData;
-  activeLanguage: string = 'de';
+  activeLanguage: string = 'en';
    activeLink: string = '#hero';
 
   constructor(private translate: TranslateService) {

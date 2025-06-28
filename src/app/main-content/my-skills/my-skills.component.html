@@ -4,9 +4,10 @@
   <div class="content">
     <div class="icons">
       @for (item of mySkillsData.skillIcons; track $index) {
-      <span><img [src]="item.path" [alt]="item.alt"> {{item.skillText}} </span>
+      <span><img [src]="item.path" [alt]="item.alt"> <span class="languageText">{{item.skillText}}</span> </span>
       }
     </div>
+      <span class="headlineMobile">{{ 'currentLearning.templateText' | translate }}</span>
 
     <div class="learningContainer">
       @for (userName of inputBoxData.userNames; track $index) {
@@ -29,7 +30,9 @@
     </div>
   </div>
 
-
+      <a href="#contact">
+                <button>Let's Talk</button>
+      </a>
   <!--     <app-input-box [inputBoxData]="inputBoxData"></app-input-box> -->
 
 </section>

@@ -1,5 +1,6 @@
 export interface SingleProject {
   id: number;
+  key: string;
   title: string;
   duration: string;
   description: string;
@@ -12,7 +13,7 @@ export interface SingleProject {
     content: string;
   }[];
   url: string;
-  image:string;
+  image: string;
 }
 
 export type ProjectData = SingleProject[];

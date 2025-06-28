@@ -9,7 +9,6 @@ section {
 
 #content {
   max-width: 1920px;
-  margin: 0rem 10rem;
   @include dFlex(space-between, center);
   width: 100%;
   flex-wrap: wrap;
@@ -127,3 +126,73 @@ h2 {
   font-size: 4rem;
   padding-bottom: 19rem;
 }
+
+@media (max-width: 1627px) {
+  section {
+    flex-direction: column;
+    #content {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1412px) {
+  .devPicture {
+    #profilePhoto {
+      margin-top: 0rem;
+    }
+  }
+  .logosContainer {
+    display: none;
+  }
+  h2 {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 822px) {
+  h1 {
+    font-size: 6.4rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+  }
+  .devPicture {
+    background-size: contain;
+    &:hover {
+      background-size: contain;
+    }
+  }
+}
+
+@media (max-width: 656px) {
+  section{
+    margin: 1rem;
+  }
+  h1 {
+    font-size: 4.8rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  img {
+    width: 37rem;
+  }
+  .devPicture{
+    height: 52rem;
+  }
+}
+
+@media (max-width: 390px) {
+
+  img {
+    width: 31rem;
+    height: 37rem;
+  }
+  .devPicture{
+    height: 43rem;
+    margin: 2rem;
+  }
+}
+

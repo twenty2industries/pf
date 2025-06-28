@@ -9,7 +9,6 @@ import { MySkillsData } from './interfaces/my-skills.interface';
 import { ProjectData } from './interfaces/projects.interface';
 import { ContactFormData } from './interfaces/contactMe.interface';
 
-
 @Component({
   selector: 'app-main-content',
   imports: [
@@ -20,7 +19,7 @@ import { ContactFormData } from './interfaces/contactMe.interface';
     ContactMeComponent,
   ],
   templateUrl: './main-content.component.html',
-  
+
   styleUrl: './main-content.component.scss',
 })
 export class MainContentComponent {
@@ -44,7 +43,7 @@ export class MainContentComponent {
   mySkillsData: MySkillsData = {
     title: 'My Skills',
     skillIcons: [
-            {
+      {
         path: '/images/sections/mySkills/tsDefault.png',
         alt: 'TypeScript',
         skillText: 'TypeScript',
@@ -76,6 +75,7 @@ export class MainContentComponent {
     {
       id: 1,
       title: 'El Polo Loco',
+      key: 'EL_POLO_LOCO',
       duration: 'Duration: 4 weeks',
       description: 'Jump-and-run game inspired by classic platformers.',
       technologies: [
@@ -114,6 +114,7 @@ export class MainContentComponent {
     },
     {
       id: 2,
+      key: 'JOIN',
       title: 'Join',
       duration: 'Duration: 5 weeks',
       description: 'Task manager inspired by the Kanban System.',
@@ -152,6 +153,7 @@ export class MainContentComponent {
     },
     {
       id: 3,
+      key: 'ONGOING_PROJECT',
       title: 'Ongoing Project',
       duration: '',
       description: 'Task manager inspired by the Kanban System.',
@@ -179,7 +181,6 @@ export class MainContentComponent {
           content:
             'What are you currently working on and what features are you implementing? What is the key to success in your projects?  You can mention good planning,  code quality and execution. <br><br> Show a desire to learn new technologies and continually improve your skills.',
         },
-
       ],
       url: 'Try it now',
       image: '/images/sections/myProjects/ongoingProject.png',
@@ -187,27 +188,29 @@ export class MainContentComponent {
   ];
 
   contactData: ContactFormData = {
-  contactInfo: {
-    emailClass: 'emailImage',
-    email: 'SIUSNAROS@test.de',
-    phoneClass: 'phoneImage',
-    phone: '0157 123 456 68'
-  },
-  formFields: {
-    name: {
-      label: 'Your name',
-      inputType: 'text'
+    contactInfo: {
+      emailClass: 'emailImage',
+      email: 'SIUSNAROS@test.de',
+      phoneClass: 'phoneImage',
+      phone: '0157 123 456 68',
     },
-    email: {
-      label: 'Your Email',
-      inputType: 'text'
+    formFields: {
+      name: {
+        label: 'Your name',
+        inputType: 'text',
+      },
+      email: {
+        label: 'Your Email',
+        inputType: 'text',
+      },
+      message: {
+        label: 'Your message',
+        inputType: 'text',
+        privacyText:
+          "I've read the privacy policy and agree to the processing of my data as outlined.",
+      },
     },
-    message: {
-      label: 'Your message',
-      inputType: 'text',
-      privacyText: "I've read the privacy policy and agree to the processing of my data as outlined."
-    }
-  },
-  descriptionText: 'Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work. <br> Example: Feel free to get in touch with job offers or opportunities such as: ...'
-};
+    descriptionText:
+      'Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work. <br> Example: Feel free to get in touch with job offers or opportunities such as: ...',
+  };
 }

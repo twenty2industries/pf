@@ -85,8 +85,49 @@
   },
 
   "currentLearning": {
-        "templateText": "Aktuell lerne ich",
+    "templateText": "Aktuell lerne ich",
 
     "inputText": " Dass du motiviert bist, deine Fähigkeiten ständig zu verbessern, innovative Lösungen umzusetzen und über neue Technologien auf dem Laufenden zu bleiben."
+  },
+
+  "PROJECTS": {
+        "TITLE": "Meine Projekte",
+
+    "EL_POLO_LOCO": {
+      "TITLE": "El Polo Loco",
+      "DURATION": "Dauer: 4 Wochen",
+      "DESCRIPTION": "Jump-and-Run-Spiel inspiriert von klassischen Plattformspielen.",
+      "BULLET_POINTS": {
+        "ABOUT_TITLE": "Über das Projekt",
+        "ABOUT_CONTENT": "Ein einfaches Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Flaschen zu finden, um gegen das Huhn zu kämpfen.",
+        "WORK_PROCESS_TITLE": "Wie ich meinen Arbeitsprozess organisiert habe",
+        "WORK_PROCESS_CONTENT": "Wie hältst du deinen Code sauber und wartbar? Hast du das Projekt in wiederverwendbare Module oder Komponenten unterteilt? Konzentriere dich auf Dokumentation, Benennung von Dateien, Variablen, Klassen und Tests.",
+        "LEARNINGS_TITLE": "Was ich gelernt habe",
+        "LEARNINGS_CONTENT": "Als jemand, der immer versucht, neue Technologien zu lernen, hat dir dieses Projekt vielleicht gefallen, weil es dir ermöglicht hat, tief in eine bestimmte Technologie einzutauchen. Gib Details an, wie den Namen des Frameworks oder der Sprache."
+      },
+      "URL": "Spiel starten"
+    },
+    "JOIN": {
+      "TITLE": "Join",
+      "DURATION": "Dauer: 5 Wochen",
+      "DESCRIPTION": "Aufgabenmanager inspiriert vom Kanban-System.",
+      "BULLET_POINTS": {
+        "ABOUT_TITLE": "Über das Projekt",
+        "ABOUT_CONTENT": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+        "WORK_PROCESS_TITLE": "Wie ich meinen Arbeitsprozess organisiert habe",
+        "WORK_PROCESS_CONTENT": "Wie hältst du deinen Code sauber und wartbar? Hast du das Projekt in wiederverwendbare Module oder Komponenten unterteilt? Konzentriere dich auf Dokumentation, Benennung von Dateien, Variablen, Klassen und Tests.",
+"LEARNINGS_TITLE": "Meine Erfahrung mit Gruppenarbeit",
+"LEARNINGS_CONTENT": "Wie viele Personen waren im Team und welche Rolle hatten Sie? Beschreiben Sie Ihre Aufgaben in 1-2 Sätzen. Es ist gut, gutes Teamwork und Zusammenarbeit zu erwähnen."      },
+      "URL": "Jetzt testen"
+    },
+    "ONGOING_PROJECT": {
+      "TITLE": "Laufendes Projekt",
+      "DESCRIPTION": "Aufgabenmanager inspiriert vom Kanban-System.",
+      "BULLET_POINTS": {
+        "ABOUT_TITLE": "Über das Projekt",
+        "ABOUT_CONTENT": "An was arbeitest du gerade und welche Funktionen implementierst du? Was ist der Schlüssel zum Erfolg in deinen Projekten? Du kannst gute Planung, Codequalität und Ausführung erwähnen. <br><br> Zeige den Wunsch, neue Technologien zu lernen und deine Fähigkeiten kontinuierlich zu verbessern."
+      },
+      "URL": "Jetzt testen"
+    }
   }
 }

@@ -13,7 +13,6 @@ section {
 
 .input {
   @include dFlex(normal, normal);
-  margin-top: 5rem;
   width: 100%;
   gap: 1rem;
 }
@@ -201,7 +200,7 @@ div {
 
 input {
   font-family: "Josefin Sans";
-z-index: 1;
+  z-index: 1;
   outline: none;
   font-size: 1.8rem;
   text-align: start;
@@ -284,7 +283,37 @@ z-index: 1;
   color: #f8f6ec;
   padding: 0;
 
-  >.privacyText{
+  > .privacyText {
     font-size: 1.4rem;
+  }
+}
+
+.arrowUpDefault {
+  background-image: url("../../../../public/images/ui/arrow/arrowUpDefault.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 3.9rem;
+  height: 12rem;
+  transition: background-image ease-in-out 0.5s;
+  &:hover {
+    background-image: url("../../../../public/images/ui/arrow/arrowUpHover.png");
+  }
+}
+
+.titleArea {
+  @include dFlex(space-between, center); 
+
+      margin-left: auto;
+    margin-right: 21rem;
+    margin-top: 2rem;
+  h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+  }
+
+  a {
+    margin-left: auto; // Schiebt den Pfeil nach rechts
   }
 }

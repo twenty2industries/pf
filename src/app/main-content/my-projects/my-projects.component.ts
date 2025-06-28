@@ -11,10 +11,11 @@ import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
 })
 export class MyProjectsComponent {
 @Input() projectData!: ProjectData;
-
+selectedProject: string = 'EL_POLO_LOCO';
 selectedProjectId: number = 1; 
 
 selectProject(id: number) {
+  
   this.selectedProjectId = id;
 }
 
