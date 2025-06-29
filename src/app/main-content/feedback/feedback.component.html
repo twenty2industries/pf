@@ -1,15 +1,11 @@
 <section>
   <div class="headlineArea">
-  <h1>{{ 'feedback.titel' | translate }}</h1>
+    <h1 class="headline">{{ 'feedback.titel' | translate }}</h1>
+        <h1 [innerHTML]="'feedback.mobileTitel' | translate " class="headlineMobile"></h1>
+        <span class="headlineMobile">{{ 'feedback.mobileTitel2' | translate }}</span>
   </div>
-  <div class="container"
-       (mousedown)="startDrag($event)"
-       (touchstart)="startDrag($event)"
-       (mousemove)="onDrag($event)"
-       (touchmove)="onDrag($event)"
-       (mouseup)="endDrag()"
-       (mouseleave)="endDrag()"
-       (touchend)="endDrag()">    <!--     @for (item of feedbackItems; track $index) {
+  <div class="container" (mousedown)="startDrag($event)" (touchstart)="startDrag($event)" (mousemove)="onDrag($event)"
+    (touchmove)="onDrag($event)" (mouseup)="endDrag()" (mouseleave)="endDrag()" (touchend)="endDrag()"> <!--     @for (item of feedbackItems; track $index) {
       <app-input-box [inputBoxData]="item"></app-input-box>
     } -->
 

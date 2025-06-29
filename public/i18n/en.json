@@ -58,6 +58,8 @@
   "feedback": {
     "titel": "Need a teamplayer? Here what my colleagues said about me",
     "linkText": "Linked in Profile",
+    "mobileTitel": "Need a teamplayer?",
+    "mobileTitel2": "Here what my colleagues said about me",
 
     "feedback1": {
       "userName": "Sahra Mueller",

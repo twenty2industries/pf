@@ -3,7 +3,7 @@
 section {
   @include dFlex(center, center);
   flex-direction: column;
-  margin-bottom: 10rem;
+  margin: 3rem;
 
   > h1 {
     color: #89bcd9;
@@ -202,7 +202,6 @@ a{
     gap: 0.5rem;
     @include dFlex(start, center);
     height: auto;
-    width: 100%;
     background: none;
     flex-direction: row-reverse;
     &:hover {
@@ -210,6 +209,9 @@ a{
     }
     .title {
       display: none;
+    }
+    span{
+      text-align: start;
     }
   }
   .headlineMobile {
