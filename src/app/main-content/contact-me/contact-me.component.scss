@@ -278,7 +278,7 @@ input {
 }
 
 #privacy {
-  @include dFlex(center, center); //MIXIN ERSTELLEN
+  @include dFlex(center, center);
 
   color: #f8f6ec;
   padding: 0;
@@ -301,11 +301,10 @@ input {
 }
 
 .titleArea {
-  @include dFlex(space-between, center); 
-
-      margin-left: auto;
-    margin-right: 21rem;
-    margin-top: 2rem;
+  @include dFlex(space-between, center);
+  margin-left: auto;
+  margin-right: 21rem;
+  margin-top: 2rem;
   h1 {
     position: absolute;
     left: 50%;
@@ -314,24 +313,72 @@ input {
   }
 
   a {
-    margin-left: auto; // Schiebt den Pfeil nach rechts
+    margin-left: auto;
   }
 }
 
-@media (max-width: 1300px) {
-
+@media (max-width: 1200px) {
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1000px) {
+  section {
+    margin-top: 5rem;
+  }
+  .titleArea {
+    margin: 0rem;
+    h1 {
+      position: unset;
+      @include dFlex(center, center);
+      transform: none;
+    }
+  }
+  .arrowUpDefault {
+    display: none;
+  }
+  .yourName {
+    margin-top: 0;
+  }
+  .input {
+    align-items: center;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .formularInput {
+    flex-direction: column;
+  }
+  .text {
+    width: auto;
+  }
+  .messageInput {
+    width: 44.5rem;
+    .messageField {
+      width: 100%;
+    }
+  }
+  span {
+    display: none;
+  }
 
+  .arrowUpDefaultMobile {
+    background-image: url("../../../../public/images/ui/arrow/arrowUpDefault.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 3.9rem;
+    height: 8rem;
+    transition: background-image ease-in-out 0.5s;
+    &:hover {
+      background-image: url("../../../../public/images/ui/arrow/arrowUpHover.png");
+    }
+  }
 }
 
 @media (max-width: 656px) {
-
 }
 
 @media (max-width: 565px) {
-
 }
 
 @media (max-width: 443px) {

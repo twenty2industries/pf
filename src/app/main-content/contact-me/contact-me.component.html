@@ -36,7 +36,7 @@
           <img src="/images/sections/contactMe/agreed.png" alt="" />
           }
           <input [(ngModel)]="contactDatas.name" [class]="{ invalid: !name.valid && submitted }" #name="ngModel"
-            name="name" id="yourNameField" class="textField" type="text" required minlength="3" />
+            name="name" id="yourNameField" class="textField" type="text" required minlength="3" placeholder="{{ 'contact.formFields.name.label' | translate }}"/>
         </div>
 
         <div class="yourName">
@@ -51,7 +51,7 @@
           }
           <input [(ngModel)]="contactDatas.email" [class]="{ invalid: !email.valid && submitted }" #email="ngModel"
             name="email" id="yourEmailField" class="textField" type="text" required
-            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" placeholder="{{ 'contact.formFields.email.label' | translate }}"/>
         </div>
       </div>
 
@@ -66,7 +66,7 @@
 
         <input #message="ngModel" minlength="6" [(ngModel)]="contactDatas.message"
           [class]="{ invalid: !message.valid && submitted }" name="message" id="yourMessageField" class="messageField"
-          type="text" required />
+          type="text" required placeholder="{{ 'contact.formFields.message.label' | translate }}" />
 
         <div class="checkArea">
           <div class="agreementArea">
@@ -92,9 +92,12 @@
                 message.valid &&
                 name.valid &&
                 email.valid
-            }" type="submit" value="Send" name="submitButton" />
+            }" type="submit" value="Send" name="submitButton"/>
         </div>
       </div>
+              <a href="#hero">
+      <div class="arrowUpDefaultMobile"></div>
+    </a>
     </div>
   </form>
 </section>
