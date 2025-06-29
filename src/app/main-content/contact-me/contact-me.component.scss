@@ -67,6 +67,10 @@ span {
   padding-bottom: 0.5rem;
 }
 
+.mobileHeadline {
+  display: none;
+}
+
 p {
   font-family: "Josefin Sans";
 }
@@ -321,11 +325,17 @@ input {
 }
 
 @media (max-width: 1000px) {
+  .contactInfo {
+    gap: 0.5rem;
+    flex-direction: column-reverse;
+  }
   section {
     margin-top: 5rem;
   }
   .titleArea {
     margin: 0rem;
+    margin-bottom: 5rem;
+
     h1 {
       position: unset;
       @include dFlex(center, center);
@@ -349,6 +359,9 @@ input {
   }
   .text {
     width: auto;
+    @include dFlex(center, center);
+    gap: 3rem;
+    margin-bottom: 2rem;
   }
   .messageInput {
     width: 44.5rem;
@@ -365,13 +378,19 @@ input {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-
     width: 3.9rem;
     height: 8rem;
     transition: background-image ease-in-out 0.5s;
     &:hover {
       background-image: url("../../../../public/images/ui/arrow/arrowUpHover.png");
     }
+  }
+  .mobileHeadline {
+    display: block;
+    font-family: 'Josefin Sans';
+    font-size: 2rem;
+    color: #89bcd9;
+    font-weight: lighter;
   }
 }
 

@@ -34,6 +34,10 @@ footer {
   }
 }
 
+.legalNoticeMobile{
+  display: none;
+}
+
 #mail,
 #github,
 #linkedin {
@@ -64,4 +68,50 @@ footer {
   &:hover {
     background-image: url("../../../../public/images/sections/footer/linkedinHover.png");
   }
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 900px) {
+  footer {
+    .content {
+      padding: 0rem 10rem;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  footer {
+    .socials{
+      gap: 3rem;
+    }
+    .content {
+      flex-direction: column;
+      justify-content: center;
+      height: 24rem;
+      gap: 2rem;
+      .legalNotice {
+        display:  none;
+      }
+    }
+  }
+
+      .legalNoticeMobile{
+              @include dFlex(space-between, center);
+      font-family: "Josefin Sans";
+      color: black;
+      width: 100%;
+      }
+}
+
+@media (max-width: 565px) {
+  footer {
+    .content {
+      padding: 0rem 3rem;
+    }
+  }
+}
+
+@media (max-width: 443px) {
 }
