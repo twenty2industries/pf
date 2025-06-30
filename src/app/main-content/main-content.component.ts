@@ -9,7 +9,7 @@ import { MySkillsData } from './interfaces/my-skills.interface';
 import { ProjectData } from './interfaces/projects.interface';
 import { ContactFormData } from './interfaces/contactMe.interface';
 import { HeroComponent } from './hero/hero.component';
-import { HeaderComponent } from './../shared/header/header.component';
+import { HeaderComponent } from '../shared/header/header.component';
 import { HeroData } from './interfaces/hero.interface'; 
 import { HeaderData } from './interfaces/header.interface';
 

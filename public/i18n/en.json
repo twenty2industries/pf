@@ -117,7 +117,6 @@
         "WORK_PROCESS_CONTENT": "How do you keep your code clean and maintainable? Have you broken the project down into reusable modules or components? Focus on documentation, naming files, variables, classes and testing.",
         "LEARNINGS_TITLE": "My group work experience",
         "LEARNINGS_CONTENT": "How many people were in the team and what was your role? Describe your tasks in 1-2 sentences. It is nice to mention a good teamwork and cooperation."
-
       },
       "URL": "Try it now"
     },
@@ -132,7 +131,7 @@
     }
   },
 
-    "IMPRINT": {
+  "IMPRINT": {
     "TITLE": "Legal Notice",
     "LEGAL_DISCLAIMER": "Information according to § 5 TMG (Germany)",
     "ADDRESS": {

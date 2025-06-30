@@ -26,7 +26,7 @@
   },
 
   "contact": {
-        "headline": "Lassen sie uns zusammenarbeiten!",
+    "headline": "Lassen sie uns zusammenarbeiten!",
 
     "title": "Kontakt",
     "text": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, an welcher Rolle du interessiert bist. Zeige, dass du durch deine Arbeit einen Mehrwert für ihre Projekte schaffst. Beispiel: Zögere nicht, dich mit Jobangeboten oder Möglichkeiten wie zum Beispiel ...",
@@ -96,7 +96,7 @@
   },
 
   "PROJECTS": {
-        "TITLE": "Meine Projekte",
+    "TITLE": "Meine Projekte",
 
     "EL_POLO_LOCO": {
       "TITLE": "El Polo Loco",
@@ -121,8 +121,9 @@
         "ABOUT_CONTENT": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
         "WORK_PROCESS_TITLE": "Wie ich meinen Arbeitsprozess organisiert habe",
         "WORK_PROCESS_CONTENT": "Wie hältst du deinen Code sauber und wartbar? Hast du das Projekt in wiederverwendbare Module oder Komponenten unterteilt? Konzentriere dich auf Dokumentation, Benennung von Dateien, Variablen, Klassen und Tests.",
-"LEARNINGS_TITLE": "Meine Erfahrung mit Gruppenarbeit",
-"LEARNINGS_CONTENT": "Wie viele Personen waren im Team und welche Rolle hatten Sie? Beschreiben Sie Ihre Aufgaben in 1-2 Sätzen. Es ist gut, gutes Teamwork und Zusammenarbeit zu erwähnen."      },
+        "LEARNINGS_TITLE": "Meine Erfahrung mit Gruppenarbeit",
+        "LEARNINGS_CONTENT": "Wie viele Personen waren im Team und welche Rolle hatten Sie? Beschreiben Sie Ihre Aufgaben in 1-2 Sätzen. Es ist gut, gutes Teamwork und Zusammenarbeit zu erwähnen."
+      },
       "URL": "Jetzt testen"
     },
     "ONGOING_PROJECT": {
@@ -136,7 +137,6 @@
     }
   },
 
-  
   "IMPRINT": {
     "TITLE": "Impressum",
     "LEGAL_DISCLAIMER": "Angaben gemäß § 5 TMG",
@@ -158,4 +158,3 @@
     }
   }
 }
-

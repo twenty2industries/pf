@@ -110,6 +110,15 @@ a{
       }
 }
 
+    a {
+      font-size: 1.8rem;
+      transition: color 0.17s ease-in-out;
+
+      &:hover {
+        color: white;
+      }
+    }
+
 @media (max-width: 565px) {
   footer {
     .content {
