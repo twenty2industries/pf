@@ -1,1 +1,38 @@
-<p>legal-notice works!</p>
+
+<app-header></app-header>
+
+<section>
+<div class="imprint-container">
+  <h1>{{ 'IMPRINT.TITLE' | translate }}</h1>
+  
+  <section class="legal-section">
+    <p>{{ 'IMPRINT.LEGAL_DISCLAIMER' | translate }}</p>
+    <address>
+      <p>{{ 'IMPRINT.ADDRESS.NAME' | translate }}</p>
+      <p>{{ 'IMPRINT.ADDRESS.COMPANY' | translate }}</p>
+      <p>{{ 'IMPRINT.ADDRESS.STREET' | translate }}</p>
+      <p>{{ 'IMPRINT.ADDRESS.CITY_ZIP' | translate }}</p>
+    </address>
+  </section>
+
+  <section class="contact-section">
+    <h2>{{ 'CONTACT' | translate }}</h2>
+    <p>{{ 'IMPRINT.CONTACT.EMAIL' | translate }}</p>
+  </section>
+
+  <section class="vat-section">
+    <h2>{{ 'VAT' | translate }}</h2>
+    <p>{{ 'IMPRINT.VAT.ID' | translate }}</p>
+  </section>
+
+  <section class="dispute-section">
+    <h2>{{ 'DISPUTE_RESOLUTION' | translate }}</h2>
+    <p>
+      <a href="https://ec.europa.eu/consumers/odr" target="_blank">
+        {{ 'IMPRINT.DISPUTE_RESOLUTION.EU_LINK' | translate }}
+      </a>
+    </p>
+    <p>{{ 'IMPRINT.DISPUTE_RESOLUTION.NOTE' | translate }}</p>
+  </section>
+</div>
+</section>

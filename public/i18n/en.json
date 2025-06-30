@@ -130,5 +130,26 @@
       },
       "URL": "Try it now"
     }
+  },
+
+    "IMPRINT": {
+    "TITLE": "Legal Notice",
+    "LEGAL_DISCLAIMER": "Information according to § 5 TMG (Germany)",
+    "ADDRESS": {
+      "NAME": "Burak Bostanli",
+      "COMPANY": "coupstudios",
+      "STREET": "Untere Marktstraße 12a",
+      "CITY_ZIP": "85080 Gaimersheim, Germany"
+    },
+    "CONTACT": {
+      "EMAIL": "Email: info@coup-studios.com"
+    },
+    "VAT": {
+      "ID": "VAT ID according to § 27 a German VAT Act: DE357705274"
+    },
+    "DISPUTE_RESOLUTION": {
+      "EU_LINK": "EU Commission's Online Dispute Resolution Platform: https://ec.europa.eu/consumers/odr",
+      "NOTE": "We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."
+    }
   }
 }

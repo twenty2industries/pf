@@ -1,0 +1,55 @@
+@import "../mixins.scss";
+
+.imprint-container {
+  @include dFlex(center, center);
+  flex-direction: column;
+  color: white;
+  background-color: #2d383f;
+  padding: 5rem 2rem;
+  border-radius: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: smoothFadeIn 1s ease-out forwards;
+
+  h1, h2 {
+    font-family: "Josefin Sans";
+    color: #89bcd9;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  address {
+    font-style: normal;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  section {
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid rgba(#89bcd9, 0.3);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  p, a {
+    font-family: "Josefin Sans";
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+  }
+
+  a {
+    color: #89bcd9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}

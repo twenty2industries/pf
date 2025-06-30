@@ -134,5 +134,28 @@
       },
       "URL": "Jetzt testen"
     }
+  },
+
+  
+  "IMPRINT": {
+    "TITLE": "Impressum",
+    "LEGAL_DISCLAIMER": "Angaben gemäß § 5 TMG",
+    "ADDRESS": {
+      "NAME": "Burak Bostanli",
+      "COMPANY": "coupstudios",
+      "STREET": "Untere Marktstraße 12a",
+      "CITY_ZIP": "85080 Gaimersheim, Deutschland"
+    },
+    "CONTACT": {
+      "EMAIL": "E-Mail: info@coup-studios.com"
+    },
+    "VAT": {
+      "ID": "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE357705274"
+    },
+    "DISPUTE_RESOLUTION": {
+      "EU_LINK": "Plattform der EU-Kommission zur Online-Streitbeilegung: https://ec.europa.eu/consumers/odr",
+      "NOTE": "Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit."
+    }
   }
 }
+
