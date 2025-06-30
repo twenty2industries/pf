@@ -16,16 +16,16 @@ export class MySkillsComponent {
   inputBoxData: InputBoxData = {
     subject: 'I am currently learning',
     backgroundImage: {
-      path: '/images/sections/mySkills/bgSkillsDefault.png',
+      path: 'images/sections/mySkills/bgSkillsDefault.png',
       alt: 'Feedback background',
     },
     learning: [
       {
-        iconPath: '/images/sections/mySkills/reactDefault.png',
+        iconPath: 'images/sections/mySkills/reactDefault.png',
         language: 'React',
       },
       {
-        iconPath: '/images/sections/mySkills/vueDefault.png',
+        iconPath: 'images/sections/mySkills/vueDefault.png',
         language: 'Vue:js',
       },
     ],

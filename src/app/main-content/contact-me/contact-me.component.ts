@@ -25,7 +25,6 @@ export class ContactMeComponent {
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted) {
       this.submitted = true;
-      console.log(this.submitted);
     }
   }
 }

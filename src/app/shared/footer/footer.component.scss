@@ -18,6 +18,7 @@ footer {
       flex-direction: column;
       font-family: "Josefin Sans";
       color: black;
+      
     }
 
     span {
@@ -34,6 +35,10 @@ footer {
   }
 }
 
+a{
+  color: #2f4655;
+  font-size: 1.8rem;
+}
 .legalNoticeMobile{
   display: none;
 }

@@ -3,12 +3,24 @@
 section {
   @include dFlex(center, center);
   flex-direction: column;
-  margin-top: 1rem;
+  margin-top: 10rem;
   margin-bottom: 10rem;
 
   > span {
     width: 44.5rem;
   }
+}
+
+#yourNameFieldMobile{
+  display: none
+}
+
+#yourEmailFieldMobile{
+  display: none
+}
+
+#yourMessageFieldMobile{
+  display: none
 }
 
 .input {
@@ -33,7 +45,7 @@ section {
     border-radius: 3rem;
     margin-bottom: 2rem;
     text-align:start &:focus {
-      background-color: #64879b36; // not working
+      background-color: #64879b36;
     }
   }
 }
@@ -101,7 +113,7 @@ div {
 
   .telInfoInput {
     cursor: pointer;
-    @include dFlex(start, start); //MIXIN ERSTELLEN
+    @include dFlex(start, start);
     align-items: center;
     gap: 1.5rem;
 
@@ -110,7 +122,7 @@ div {
       box-shadow: none;
       width: 32px;
       height: 32px;
-      background: url("/images/sections/contactMe/phoneDefault.png");
+      background: url("../../../../public/images/sections/contactMe/phoneDefault.png");
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -118,7 +130,7 @@ div {
       color: #7aa7c0;
 
       > .phoneImage {
-        background: url("/images/sections/contactMe/phoneHover.png");
+        background: url("../../../../public/images/sections/contactMe/phoneHover.png");
         background-position: center;
         background-repeat: no-repeat;
       }
@@ -127,7 +139,7 @@ div {
 
   .mailInfoInput {
     cursor: pointer;
-    @include dFlex(start, start); //MIXIN ERSTELLEN
+    @include dFlex(start, start);
     align-items: center;
     gap: 1.5rem;
 
@@ -136,7 +148,7 @@ div {
       box-shadow: none;
       width: 32px;
       height: 32px;
-      background: url("/images/sections/contactMe/mailDefault.png");
+      background: url("../../../../public/images/sections/contactMe/mailContactDefault.png");
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -145,7 +157,7 @@ div {
       color: #64879b;
 
       > .emailImage {
-        background: url("/images/sections/contactMe/mailHover.png");
+        background: url("../../../../public/images/sections/contactMe/mailContactHover.png");
         background-position: center;
         background-repeat: no-repeat;
       }
@@ -154,7 +166,7 @@ div {
     &:active {
       color: #7aa7c0;
       > .emailImage {
-        background: url("/images/sections/contactMe/mailClick.png");
+        background: url("../../../../public/images/sections/contactMe/mailClick.png");
         background-position: center;
         background-repeat: no-repeat;
       }
@@ -183,22 +195,23 @@ div {
     width: 30px;
     height: 30px;
     border: none;
-    background: transparent url("/images/sections/contactMe/defaultElipse.png")
+    background: transparent
+      url("../../../../public/images/sections/contactMe/defaultElipse.png")
       center/contain no-repeat;
     margin-right: 8px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
 
     &:hover {
-      background-image: url("/images/sections/contactMe/checkElipse.png");
+      background-image: url("../../../../public/images/sections/contactMe/checkElipse.png");
     }
 
     &:checked {
-      background-image: url("/images/sections/contactMe/checkedElipse.png");
+      background-image: url("../../../../public/images/sections/contactMe/checkedElipse.png");
     }
   }
   .ng-invalid.submitted {
-    background-image: url("/images/sections/contactMe/errorElipse.png");
+    background-image: url("../../../../public/images/sections/contactMe/errorElipse.png");
   }
 }
 
@@ -305,19 +318,11 @@ input {
 }
 
 .titleArea {
-  @include dFlex(space-between, center);
-  margin-left: auto;
-  margin-right: 21rem;
-  margin-top: 2rem;
-  h1 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: max-content;
-  }
+  @include dFlex(center, center);
 
   a {
-    margin-left: auto;
+    position: relative;
+    left: 28rem;
   }
 }
 
@@ -325,6 +330,33 @@ input {
 }
 
 @media (max-width: 1000px) {
+  #yourNameField{
+  display: none;
+}
+
+#yourEmailField{
+  display: none;
+}
+
+#yourMessageField{
+  display: none;
+}
+
+#yourNameFieldMobile{
+  display: flex;
+}
+
+#yourEmailFieldMobile{
+  display: flex;
+}
+
+#yourMessageFieldMobile{
+  display: flex;
+}
+
+#yourMessageFieldMobile.invalid {
+  border-color: #e44c36;
+}
   .contactInfo {
     gap: 0.5rem;
     flex-direction: column-reverse;
@@ -387,7 +419,7 @@ input {
   }
   .mobileHeadline {
     display: block;
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
     font-size: 2rem;
     color: #89bcd9;
     font-weight: lighter;

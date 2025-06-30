@@ -90,6 +90,5 @@ export class FeedbackComponent {
   endDrag() {
     this.isDragging = false;
   }
-  
 }
 

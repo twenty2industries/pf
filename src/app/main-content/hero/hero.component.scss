@@ -18,16 +18,18 @@ section {
   background: url("../../../../public/images/sections/hero/bgShapeDefault.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 59.4rem;
-  height: 71rem;
+  height: 59rem;
   transition: background ease-in-out 0.5s;
   @include dFlex(center, center);
 
   &:hover {
     background: url("../../../../public/images/sections/hero/bgShapeHover.png");
+      background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -136,10 +138,11 @@ h2 {
   }
 }
 
-@media (max-width: 1412px) {
+@media (max-width: 1440px) {
   .devPicture {
     #profilePhoto {
-      margin-top: 0rem;
+      margin-top: 2rem;
+      height: 57rem;
     }
   }
   .logosContainer {
@@ -176,10 +179,8 @@ h2 {
     font-size: 2.4rem;
   }
 
-  img {
-    width: 37rem;
-  }
   .devPicture{
+    margin-bottom: 5rem;
     height: 52rem;
   }
 }

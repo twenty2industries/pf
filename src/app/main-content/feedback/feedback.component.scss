@@ -13,7 +13,7 @@ section {
   }
 
   > .headlineArea {
-    @include dFlex(start, start);
+    @include dFlex(center, center);
     flex-direction: column;
     margin-bottom: 7rem;
     width: 100%;

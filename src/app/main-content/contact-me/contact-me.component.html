@@ -1,10 +1,10 @@
 <section id="contact">
   <div class="titleArea">
+
+    <h1>{{ "contact.title" | translate }}</h1>
     <a href="#hero">
       <div class="arrowUpDefault"></div>
     </a>
-    <h1>{{ "contact.title" | translate }}</h1>
-
   </div>
   <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
     <div id="content">
@@ -35,10 +35,13 @@
           } @else {
           <span>{{ "contact.formFields.name.label" | translate }}</span>
           } @if (name.valid && submitted) {
-          <img src="/images/sections/contactMe/agreed.png" alt="" />
+          <img src="images/sections/contactMe/agreed.png" alt="" />
           }
           <input [(ngModel)]="contactDatas.name" [class]="{ invalid: !name.valid && submitted }" #name="ngModel"
-            name="name" id="yourNameField" class="textField" type="text" required minlength="3" placeholder="{{ 'contact.formFields.name.label' | translate }}"/>
+            name="name" id="yourNameField" class="textField" type="text" required minlength="3"/>
+
+                      <input [(ngModel)]="contactDatas.name" [class]="{ invalid: !name.valid && submitted }" #name="ngModel"
+            name="name" id="yourNameFieldMobile" class="textField" type="text" required minlength="3" placeholder="{{ 'contact.formFields.name.label' | translate }}"/>
         </div>
 
         <div class="yourName">
@@ -49,12 +52,17 @@
           } @else {
           <span>{{ "contact.formFields.email.label" | translate }}</span>
           } @if (email.valid && submitted) {
-          <img src="/images/sections/contactMe/agreed.png" alt="" />
+          <img src="images/sections/contactMe/agreed.png" alt="" />
           }
           <input [(ngModel)]="contactDatas.email" [class]="{ invalid: !email.valid && submitted }" #email="ngModel"
             name="email" id="yourEmailField" class="textField" type="text" required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"/>
+        
+                  <input [(ngModel)]="contactDatas.email" [class]="{ invalid: !email.valid && submitted }" #email="ngModel"
+            name="email" id="yourEmailFieldMobile" class="textField" type="text" required
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" placeholder="{{ 'contact.formFields.email.label' | translate }}"/>
-        </div>
+
+          </div>
       </div>
 
       <div class="messageInput">
@@ -68,6 +76,10 @@
 
         <input #message="ngModel" minlength="6" [(ngModel)]="contactDatas.message"
           [class]="{ invalid: !message.valid && submitted }" name="message" id="yourMessageField" class="messageField"
+          type="text" required/>
+        
+          <input #message="ngModel" minlength="6" [(ngModel)]="contactDatas.message"
+          [class]="{ invalid: !message.valid && submitted }" name="message" id="yourMessageFieldMobile" class="messageField"
           type="text" required placeholder="{{ 'contact.formFields.message.label' | translate }}" />
 
         <div class="checkArea">

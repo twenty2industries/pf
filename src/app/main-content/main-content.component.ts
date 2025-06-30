@@ -8,6 +8,10 @@ import { WhyMeData } from './interfaces/why-me.interface';
 import { MySkillsData } from './interfaces/my-skills.interface';
 import { ProjectData } from './interfaces/projects.interface';
 import { ContactFormData } from './interfaces/contactMe.interface';
+import { HeroComponent } from './hero/hero.component';
+import { HeaderComponent } from './../shared/header/header.component';
+import { HeroData } from './interfaces/hero.interface'; 
+import { HeaderData } from './interfaces/header.interface';
 
 @Component({
   selector: 'app-main-content',
@@ -17,16 +21,19 @@ import { ContactFormData } from './interfaces/contactMe.interface';
     MyProjectsComponent,
     FeedbackComponent,
     ContactMeComponent,
+    HeroComponent,
+    HeaderComponent
   ],
   templateUrl: './main-content.component.html',
 
   styleUrl: './main-content.component.scss',
 })
 export class MainContentComponent {
+  
   whyMeData: WhyMeData = {
     title: 'Why me',
     locationIcon: {
-      path: '/images/sections/whyMe/locationDefault.png',
+      path: 'images/sections/whyMe/locationDefault.png',
       alt: 'Location icon',
     },
     texts: {
@@ -35,7 +42,7 @@ export class MainContentComponent {
         'Why are you passionate about coding?  You can include some key traits like: analytical thinking, creativity, persistence and  collaboration. A problem-solving mindset is always nice to have.',
     },
     talkButton: {
-      path: '/images/sections/whyMe/buttonDefault.png',
+      path: 'images/sections/whyMe/buttonDefault.png',
       alt: 'Talk to me button',
     },
   };
@@ -44,27 +51,27 @@ export class MainContentComponent {
     title: 'My Skills',
     skillIcons: [
       {
-        path: '/images/sections/mySkills/tsDefault.png',
+        path: 'images/sections/mySkills/tsDefault.png',
         alt: 'TypeScript',
         skillText: 'TypeScript',
       },
       {
-        path: '/images/sections/mySkills/angularDefault.png',
+        path: 'images/sections/mySkills/angularDefault.png',
         alt: 'Angular',
         skillText: 'Angular',
       },
       {
-        path: '/images/sections/mySkills/cssDefault.png',
+        path: 'images/sections/mySkills/cssDefault.png',
         alt: 'CSS',
         skillText: 'CSS',
       },
       {
-        path: '/images/sections/mySkills/htmlDefault.png',
+        path: 'images/sections/mySkills/htmlDefault.png',
         alt: 'HTML',
         skillText: 'HTML',
       },
       {
-        path: '/images/sections/mySkills/jsDefault.png',
+        path: 'images/sections/mySkills/jsDefault.png',
         alt: 'JavaScript',
         skillText: 'JavaScript',
       },
@@ -80,15 +87,15 @@ export class MainContentComponent {
       description: 'Jump-and-run game inspired by classic platformers.',
       technologies: [
         {
-          iconPath: '/images/sections/mySkills/jsDefault.png',
+          iconPath: 'images/sections/mySkills/jsDefault.png',
           altText: 'JavaScript',
         },
         {
-          iconPath: '/images/sections/mySkills/htmlDefault.png',
+          iconPath: 'images/sections/mySkills/htmlDefault.png',
           altText: 'HTML',
         },
         {
-          iconPath: '/images/sections/mySkills/cssDefault.png',
+          iconPath: 'images/sections/mySkills/cssDefault.png',
           altText: 'CSS',
         },
       ],
@@ -110,7 +117,7 @@ export class MainContentComponent {
         },
       ],
       url: 'Play Game',
-      image: '/images/sections/myProjects/elpololoco.png',
+      image: 'images/sections/myProjects/elpololoco.png',
     },
     {
       id: 2,
@@ -120,19 +127,19 @@ export class MainContentComponent {
       description: 'Task manager inspired by the Kanban System.',
       technologies: [
         {
-          iconPath: '/images/sections/mySkills/angularDefault.png',
+          iconPath: 'images/sections/mySkills/angularDefault.png',
           altText: 'Angular',
         },
         {
-          iconPath: '/images/sections/mySkills/tsDefault.png',
+          iconPath: 'images/sections/mySkills/tsDefault.png',
           altText: 'TypeScript',
         },
         {
-          iconPath: '/images/sections/mySkills/htmlDefault.png',
+          iconPath: 'images/sections/mySkills/htmlDefault.png',
           altText: 'HTML',
         },
         {
-          iconPath: '/images/sections/mySkills/cssDefault.png',
+          iconPath: 'images/sections/mySkills/cssDefault.png',
           altText: 'CSS',
         },
       ],
@@ -149,7 +156,7 @@ export class MainContentComponent {
         },
       ],
       url: 'Try it now',
-      image: '/images/sections/myProjects/join.png',
+      image: 'images/sections/myProjects/join.png',
     },
     {
       id: 3,
@@ -159,19 +166,19 @@ export class MainContentComponent {
       description: 'Task manager inspired by the Kanban System.',
       technologies: [
         {
-          iconPath: '/images/sections/mySkills/angularDefault.png',
+          iconPath: 'images/sections/mySkills/angularDefault.png',
           altText: 'Angular',
         },
         {
-          iconPath: '/images/sections/mySkills/tsDefault.png',
+          iconPath: 'images/sections/mySkills/tsDefault.png',
           altText: 'TypeScript',
         },
         {
-          iconPath: '/images/sections/mySkills/htmlDefault.png',
+          iconPath: 'images/sections/mySkills/htmlDefault.png',
           altText: 'HTML',
         },
         {
-          iconPath: '/images/sections/mySkills/cssDefault.png',
+          iconPath: 'images/sections/mySkills/cssDefault.png',
           altText: 'CSS',
         },
       ],
@@ -183,7 +190,7 @@ export class MainContentComponent {
         },
       ],
       url: 'Try it now',
-      image: '/images/sections/myProjects/ongoingProject.png',
+      image: 'images/sections/myProjects/ongoingProject.png',
     },
   ];
 
@@ -212,5 +219,48 @@ export class MainContentComponent {
     },
     descriptionText:
       'Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work. <br> Example: Feel free to get in touch with job offers or opportunities such as: ...',
+  };
+
+    heroData: HeroData = {
+    images: {
+      bgShape: {
+        path: 'images/sections/hero/bgShapeDefault.png',
+        alt: 'bg-Form',
+      },
+      logo: {
+        path: 'images/ui/logo/logoDefault.png',
+        alt: 'Portfolio-Logo',
+      },
+      arrowDown: {
+        path: 'images/ui/arrow/arrowDownDefault.png',
+        alt: 'arrow down',
+      },
+    },
+    socials: [
+      { icon: 'images/socials/mail/mailDefault.png', alt: 'mail' },
+      { icon: 'images/socials/github/githubDefault.png', alt: 'gitHub' },
+      { icon: 'images/socials/linkedin/linkedinDefault.png', alt: 'linkedIn' },
+    ],
+    text: {
+      name: 'Burak Bostanli',
+      title: 'FRONTEND DEVELOPER',
+    },
+  };
+
+  headerData: HeaderData = {
+    logo: {
+      path: 'images/sections/navBar/logoDarkDefault.png',
+      alt: 'Logo',
+    },
+    links: [
+      { text: 'Why me', url: '#why-me' },
+      { text: 'Skills', url: '#skills' },
+      { text: 'Projects', url: '#projects' },
+      { text: 'Contact', url: '#contact' },
+    ],
+    languageOptions: [
+      { code: 'DE', lang: 'de' },
+      { code: 'EN', lang: 'en' },
+    ],
   };
 }
