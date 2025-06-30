@@ -11,16 +11,24 @@ section {
   }
 }
 
-#yourNameFieldMobile{
-  display: none
+a {
+  transition: color 0.17s ease-in-out;
+
+  &:hover {
+    color: white;
+  }
 }
 
-#yourEmailFieldMobile{
-  display: none
+#yourNameFieldMobile {
+  display: none;
 }
 
-#yourMessageFieldMobile{
-  display: none
+#yourEmailFieldMobile {
+  display: none;
+}
+
+#yourMessageFieldMobile {
+  display: none;
 }
 
 .input {
@@ -330,33 +338,33 @@ input {
 }
 
 @media (max-width: 1000px) {
-  #yourNameField{
-  display: none;
-}
+  #yourNameField {
+    display: none;
+  }
 
-#yourEmailField{
-  display: none;
-}
+  #yourEmailField {
+    display: none;
+  }
 
-#yourMessageField{
-  display: none;
-}
+  #yourMessageField {
+    display: none;
+  }
 
-#yourNameFieldMobile{
-  display: flex;
-}
+  #yourNameFieldMobile {
+    display: flex;
+  }
 
-#yourEmailFieldMobile{
-  display: flex;
-}
+  #yourEmailFieldMobile {
+    display: flex;
+  }
 
-#yourMessageFieldMobile{
-  display: flex;
-}
+  #yourMessageFieldMobile {
+    display: flex;
+  }
 
-#yourMessageFieldMobile.invalid {
-  border-color: #e44c36;
-}
+  #yourMessageFieldMobile.invalid {
+    border-color: #e44c36;
+  }
   .contactInfo {
     gap: 0.5rem;
     flex-direction: column-reverse;

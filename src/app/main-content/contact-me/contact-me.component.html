@@ -88,9 +88,14 @@
               <input [(ngModel)]="contactDatas.checked" #privacyCheckbox="ngModel" [class.submitted]="submitted"
                 class="checkBox" type="checkbox" name="privacyCheckbox" required />
 
-              <div class="privacyText" [innerHTML]="
+
+              <div class="privacyText">{{
                   'contact.formFields.message.privacyText' | translate
-                "></div>
+                }} <a [routerLink]="'/privacy-policy'">privacy policy</a>
+                {{
+                  'contact.formFields.message.privacyText2' | translate
+                }}
+</div>
             </div>
             @if (!privacyCheckbox.valid && submitted) {
             <span id="error_text" [class]="{ errorText: !privacyCheckbox.valid && submitted }">{{

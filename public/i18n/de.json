@@ -52,7 +52,8 @@
       },
       "message": {
         "label": "Ihre Nachricht",
-        "privacyText": "Ich habe die <a href=''>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten wie darin beschrieben zu."
+        "privacyText": "Ich habe die",
+        "privacyText2": "gelesen und stimme der Verarbeitung meiner Daten wie darin beschrieben zu."
       }
     },
 
@@ -155,6 +156,39 @@
     "DISPUTE_RESOLUTION": {
       "EU_LINK": "Plattform der EU-Kommission zur Online-Streitbeilegung: https://ec.europa.eu/consumers/odr",
       "NOTE": "Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit."
+    }
+  },
+
+    "PRIVACY": {
+    "TITLE": "Datenschutzerklärung",
+    "INTRO": "Verantwortlicher im Sinne der Datenschutzgesetze:",
+    "DATA_COLLECTION": {
+      "TITLE": "Daten die wir erheben",
+      "ITEMS": [
+        "Kontaktformulardaten (Name, E-Mail, Nachricht)",
+        "Nutzungsdaten (IP, Browser, Zugriffszeiten)",
+        "Cookies (Session-Cookies)"
+      ]
+    },
+    "PURPOSE": {
+      "TITLE": "Zweck der Verarbeitung",
+      "CONTENT": "Daten werden ausschließlich zur Kontaktaufnahme und Website-Funktionalität verarbeitet."
+    },
+    "STORAGE": {
+      "TITLE": "Speicherdauer",
+      "CONTENT": "Daten werden maximal 12 Monate gespeichert, sofern nicht gesetzlich erforderlich."
+    },
+    "RIGHTS": {
+      "TITLE": "Ihre Rechte",
+      "ITEMS": [
+        "Auskunft über gespeicherte Daten",
+        "Berichtigung oder Löschung",
+        "Widerspruch gegen die Verarbeitung"
+      ]
+    },
+    "CONTACT": {
+      "TITLE": "Kontakt zum Datenschutzbeauftragten",
+      "EMAIL": "E-Mail: datenschutz@coup-studios.com"
     }
   }
 }

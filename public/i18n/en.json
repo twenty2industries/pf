@@ -50,7 +50,9 @@
       },
       "message": {
         "label": "Your message",
-        "privacyText": " I've read the <a href=''>privacy policy</a> and agree to the processing of my data as outlined."
+        "privacyText": " I've read the ",
+        "privacyText2": "and agree to the processing of my data as outlined."
+
       }
     },
     "descriptionText": "Feel free to get in touch with job offers or opportunities such as: ... Show that you will add value to their projects through your work."
@@ -149,6 +151,39 @@
     "DISPUTE_RESOLUTION": {
       "EU_LINK": "EU Commission's Online Dispute Resolution Platform: https://ec.europa.eu/consumers/odr",
       "NOTE": "We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."
+    }
+  },
+
+    "PRIVACY": {
+    "TITLE": "Privacy Policy",
+    "INTRO": "Controller under data protection laws:",
+    "DATA_COLLECTION": {
+      "TITLE": "Data we collect",
+      "ITEMS": [
+        "Contact form data (name, email, message)",
+        "Usage data (IP, browser, access times)",
+        "Cookies (session cookies)"
+      ]
+    },
+    "PURPOSE": {
+      "TITLE": "Purpose of processing",
+      "CONTENT": "Data is processed solely for contact requests and website functionality."
+    },
+    "STORAGE": {
+      "TITLE": "Storage duration",
+      "CONTENT": "Data is stored for maximum 12 months unless legally required."
+    },
+    "RIGHTS": {
+      "TITLE": "Your rights",
+      "ITEMS": [
+        "Access to stored data",
+        "Rectification or deletion",
+        "Objection to processing"
+      ]
+    },
+    "CONTACT": {
+      "TITLE": "Contact our Data Protection Officer",
+      "EMAIL": "Email: privacy@coup-studios.com"
     }
   }
 }

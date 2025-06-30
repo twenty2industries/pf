@@ -1,0 +1,46 @@
+<div class="imprint-container">
+  <h1>{{ 'PRIVACY.TITLE' | translate }}</h1>
+  
+  <section class="intro-section">
+    <p>{{ 'PRIVACY.INTRO' | translate }}</p>
+    <address>
+      <p>{{ 'IMPRINT.ADDRESS.NAME' | translate }}</p>
+      <p>{{ 'IMPRINT.ADDRESS.COMPANY' | translate }}</p>
+      <p>{{ 'IMPRINT.ADDRESS.STREET' | translate }}</p>
+      <p>{{ 'IMPRINT.ADDRESS.CITY_ZIP' | translate }}</p>
+    </address>
+  </section>
+
+  <section class="data-section">
+    <h2>{{ 'PRIVACY.DATA_COLLECTION.TITLE' | translate }}</h2>
+    <ul>
+      <li *ngFor="let item of 'PRIVACY.DATA_COLLECTION.ITEMS' | translate | keyvalue">
+        {{ item.value }}
+      </li>
+    </ul>
+  </section>
+
+  <section class="purpose-section">
+    <h2>{{ 'PRIVACY.PURPOSE.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY.PURPOSE.CONTENT' | translate }}</p>
+  </section>
+
+  <section class="storage-section">
+    <h2>{{ 'PRIVACY.STORAGE.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY.STORAGE.CONTENT' | translate }}</p>
+  </section>
+
+  <section class="rights-section">
+    <h2>{{ 'PRIVACY.RIGHTS.TITLE' | translate }}</h2>
+    <ul>
+      <li *ngFor="let item of 'PRIVACY.RIGHTS.ITEMS' | translate | keyvalue">
+        {{ item.value }}
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact-section">
+    <h2>{{ 'PRIVACY.CONTACT.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY.CONTACT.EMAIL' | translate }}</p>
+  </section>
+</div>
