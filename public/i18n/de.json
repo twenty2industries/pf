@@ -31,11 +31,6 @@
     "title": "Kontakt",
     "text": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, an welcher Rolle du interessiert bist. Zeige, dass du durch deine Arbeit einen Mehrwert für ihre Projekte schaffst. Beispiel: Zögere nicht, dich mit Jobangeboten oder Möglichkeiten wie zum Beispiel ...",
 
-    "contactInfo": {
-      "email": "SIUSNAROS@test.de",
-      "phone": "0157 123 456 68"
-    },
-
     "required": {
       "email": "Deine E-Mail ist erforderlich.",
       "name": "Dein Name ist erforderlich.",

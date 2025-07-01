@@ -4,9 +4,12 @@
 
 @media (max-width: 921px) {
   #header-mobile {
-    display: block;
-    position: sticky;
-    top: 4rem;
-    z-index: 1000;
-  }
+        display: block;
+        position: sticky;
+        top: 0rem;
+        z-index: 1000;
+        padding: 0.2rem;
+        background: rgb(33, 41, 48)
+    }
 }
+
