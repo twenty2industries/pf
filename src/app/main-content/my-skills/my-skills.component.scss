@@ -143,7 +143,7 @@ a {
   margin: 1rem 0rem;
 }
 
-a{
+a {
   display: none;
 }
 
@@ -172,16 +172,16 @@ a{
 }
 
 @media (max-width: 443px) {
-  button{
-    color: #262E34;
+  button {
+    color: #262e34;
     background-color: #89bcd9;
   }
-  .languageText{
+  .languageText {
     display: none;
   }
-  a{
-  display: block;
-}
+  a {
+    display: block;
+  }
   .languageIcons {
     background: url("../../../../public/images/sections/mySkills/ellipseMobile.png");
     background-position: center;
@@ -211,12 +211,36 @@ a{
     .title {
       display: none;
     }
-    span{
+    span {
       text-align: start;
     }
   }
   .headlineMobile {
     display: block;
     font-family: "Josefin Sans";
+  }
+}
+@media (max-width: 431px) {
+  .learningContainer {
+    width: 35rem;
+  }
+  .languageIcons{
+    width: 15.3rem;
+  }
+  .icons{
+    gap: 2rem;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .learningContainer {
+    width: 28rem;
+  }
+  .languageIcons{
+    width: 13.3rem;
+  }
+  .icons{
+    gap: 1rem;
   }
 }
