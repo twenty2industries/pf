@@ -346,3 +346,27 @@ h1 {
     font-size: 3.2rem;
   }
 }
+
+
+@media (max-width: 387px) {
+  .navContent{
+    nav{
+      span{
+        font-size: 1.8rem;
+      }
+    }
+  }
+    .projectPictures {
+    height: auto;
+    img {
+      width: 25rem;
+    }
+  }
+.projectContainer{
+  width: 85%;
+}
+.buttonAreaMobile{
+  width: 20rem;
+  gap: 1rem;
+}
+}

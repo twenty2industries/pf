@@ -416,12 +416,19 @@ input {
     }
   }
   .mobileHeadline {
+    text-align: center;
     display: block;
     font-family: "Josefin Sans";
     font-size: 2rem;
     color: #89bcd9;
     font-weight: lighter;
   }
+}
+
+@media (max-width: 654px) {
+h1{
+  font-size: 3.2rem;
+}
 }
 
 @media (max-width: 505px) {

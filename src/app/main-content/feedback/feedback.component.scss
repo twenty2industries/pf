@@ -167,6 +167,7 @@ p {
   section {
     .headlineArea {
       @include dFlex(center, center);
+      gap: 1rem;
     }
   }
 
@@ -183,11 +184,33 @@ p {
   }
   .headlineMobile {
     display: flex;
+    padding: 0rem 2rem;
   }
 }
 
-@media (max-width: 565px) {
+@media (max-width: 396px) {
+  p {
+    font-size: 1.6rem;
+  }
+  section {
+    .content {
+      height: 30rem;
+      h3 {
+        font-size: 2.4rem;
+      }
+
+    }
+  }
+        h1{
+        font-size: 2.8rem;
+      }
 }
 
-@media (max-width: 443px) {
+@media (max-width: 365px) {
+  section {
+    .content {
+      height: 30rem;
+      width: 31rem;
+    }
+  }
 }
