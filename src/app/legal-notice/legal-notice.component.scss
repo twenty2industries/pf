@@ -1,13 +1,12 @@
 @import "../mixins.scss";
 
 .imprint-container {
-  @include dFlex(center, center);
+  @include dFlex(start, start);
   flex-direction: column;
   color: white;
-  background-color: #2d383f;
   padding: 5rem 2rem;
   border-radius: 2rem;
-  max-width: 1200px;
+  max-width: 1920px;
   margin: 0 auto;
   animation: smoothFadeIn 1s ease-out forwards;
 
@@ -15,24 +14,20 @@
     font-family: "Josefin Sans";
     color: #89bcd9;
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: start;
   }
 
-  address {
+  .address {
     font-style: normal;
     margin: 2rem 0;
-    text-align: center;
   }
 
-  section {
+  div {
     width: 100%;
     padding: 2rem;
     margin-bottom: 3rem;
     border-bottom: 1px solid rgba(#89bcd9, 0.3);
 
-    &:last-child {
-      border-bottom: none;
-    }
   }
 
   p, a {

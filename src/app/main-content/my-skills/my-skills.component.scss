@@ -3,7 +3,7 @@
 section {
   @include dFlex(center, center);
   flex-direction: column;
-  margin: 3rem;
+  margin: 10rem 2rem;
 
   > h1 {
     color: #89bcd9;
@@ -149,6 +149,7 @@ a{
 
 @media (max-width: 656px) {
   section {
+    margin-bottom: 10rem;
     h1 {
       margin-bottom: 5rem;
     }

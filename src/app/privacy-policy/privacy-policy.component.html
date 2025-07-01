@@ -1,14 +1,17 @@
+<app-header [headerData]="headerData"></app-header>
+
+
 <div class="imprint-container">
   <h1>{{ 'PRIVACY.TITLE' | translate }}</h1>
-  
+
   <section class="intro-section">
     <p>{{ 'PRIVACY.INTRO' | translate }}</p>
-    <address>
+    <div>
       <p>{{ 'IMPRINT.ADDRESS.NAME' | translate }}</p>
       <p>{{ 'IMPRINT.ADDRESS.COMPANY' | translate }}</p>
       <p>{{ 'IMPRINT.ADDRESS.STREET' | translate }}</p>
       <p>{{ 'IMPRINT.ADDRESS.CITY_ZIP' | translate }}</p>
-    </address>
+    </div>
   </section>
 
   <section class="data-section">

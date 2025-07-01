@@ -1,0 +1,12 @@
+#header-mobile {
+  display: none;
+}
+
+@media (max-width: 921px) {
+  #header-mobile {
+    display: block;
+    position: sticky;
+    top: 4rem;
+    z-index: 1000;
+  }
+}

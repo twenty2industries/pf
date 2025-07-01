@@ -1,0 +1,26 @@
+<header>
+  <div id="burgerMenu">
+    <img src="images/ui/logo/logoDefault.png" alt="Logo">
+    <button class="menu" [class.is-active]="menuOpen" (click)="toggleMenu()" aria-label="Menü">
+      <div class="burger-icon"></div>
+    </button>
+  </div>
+
+  <div class="content" [class.active]="menuOpen">
+    <nav>
+      @for (link of headerData.links; track $index) {
+      <a [href]="link.url" [class.active]="activeLink === link.url" (click)="setActiveLink(link.url);">
+        {{ 'header.navLinks.' + link.text.toLowerCase().replace(' ', '') | translate }}
+      </a>
+      }
+    </nav>
+    <div class="languageSelect">
+      @for (language of headerData.languageOptions; track $index) {
+      <button [class.active]="activeLanguage === language.lang"
+        (click)="changeLanguage(language.lang);">
+        {{ language.code }}
+      </button>
+      }
+    </div>
+  </div>
+</header>

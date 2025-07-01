@@ -122,7 +122,7 @@ section {
 
 
   > img {
-    width: 100%;
+    width: 45rem;
     object-fit: cover;
     object-position: right;
     height: 31rem;
@@ -136,13 +136,24 @@ section {
   width: 30rem;
 
   .testButton {
-    color: #2d383f;
-    background-color: #89bcd9;
+      @include dFlex(center, center);
 
-    &:hover {
-      background-color: #ffffff;
-    }
-  }
+  font-family: 'Josefin Sans';
+  font-size: 1.8rem;
+  background: none;
+  width: 13.2rem;
+  height: 4.8rem;
+  border-radius: 3rem;
+  color: #89bcd9;
+  border: solid 0.1rem #89bcd9;
+  transition: background-color 0.17s ease-in-out; 
+
+  &:hover{
+    cursor: pointer;
+    background-color: #89bcd92d;
+  };
+  
+}
 }
 
 .icons {
@@ -331,4 +342,7 @@ h1 {
 }
 
 @media (max-width: 443px) {
+  h1{
+    font-size: 3.2rem;
+  }
 }

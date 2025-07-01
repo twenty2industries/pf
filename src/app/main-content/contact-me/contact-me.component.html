@@ -12,8 +12,8 @@
         <div class="text">
           <p [innerHTML]="'contact.text' | translate"></p>
 
-          <h3 class="mobileHeadline">{{ "contact.headline" | translate }}</h3>
         </div>
+
         <div class="contactInfo">
           <div class="mailInfoInput">
             <div [class]="contactData.contactInfo.emailClass" alt=""></div>
@@ -25,6 +25,7 @@
           </div>
         </div>
       </div>
+      <h3 class="mobileHeadline">{{ "contact.headline" | translate }}</h3>
 
       <div class="formularInput">
         <div class="yourName">
@@ -38,10 +39,11 @@
           <img src="images/sections/contactMe/agreed.png" alt="" />
           }
           <input [(ngModel)]="contactDatas.name" [class]="{ invalid: !name.valid && submitted }" #name="ngModel"
-            name="name" id="yourNameField" class="textField" type="text" required minlength="3"/>
+            name="name" id="yourNameField" class="textField" type="text" required />
 
-                      <input [(ngModel)]="contactDatas.name" [class]="{ invalid: !name.valid && submitted }" #name="ngModel"
-            name="name" id="yourNameFieldMobile" class="textField" type="text" required minlength="3" placeholder="{{ 'contact.formFields.name.label' | translate }}"/>
+          <input [(ngModel)]="contactDatas.name" [class]="{ invalid: !name.valid && submitted }" #name="ngModel"
+            name="name" id="yourNameFieldMobile" class="textField" type="text" required
+            placeholder="{{ 'contact.formFields.name.label' | translate }}" />
         </div>
 
         <div class="yourName">
@@ -56,13 +58,14 @@
           }
           <input [(ngModel)]="contactDatas.email" [class]="{ invalid: !email.valid && submitted }" #email="ngModel"
             name="email" id="yourEmailField" class="textField" type="text" required
-            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"/>
-        
-                  <input [(ngModel)]="contactDatas.email" [class]="{ invalid: !email.valid && submitted }" #email="ngModel"
-            name="email" id="yourEmailFieldMobile" class="textField" type="text" required
-            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" placeholder="{{ 'contact.formFields.email.label' | translate }}"/>
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
 
-          </div>
+          <input [(ngModel)]="contactDatas.email" [class]="{ invalid: !email.valid && submitted }" #email="ngModel"
+            name="email" id="yourEmailFieldMobile" class="textField" type="text" required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+            placeholder="{{ 'contact.formFields.email.label' | translate }}" />
+
+        </div>
       </div>
 
       <div class="messageInput">
@@ -74,13 +77,12 @@
         <span>{{ "contact.formFields.message.label" | translate }}</span>
         }
 
-        <input #message="ngModel" minlength="6" [(ngModel)]="contactDatas.message"
-          [class]="{ invalid: !message.valid && submitted }" name="message" id="yourMessageField" class="messageField"
-          type="text" required/>
-        
-          <input #message="ngModel" minlength="6" [(ngModel)]="contactDatas.message"
-          [class]="{ invalid: !message.valid && submitted }" name="message" id="yourMessageFieldMobile" class="messageField"
-          type="text" required placeholder="{{ 'contact.formFields.message.label' | translate }}" />
+        <input #message="ngModel" [(ngModel)]="contactDatas.message" [class]="{ invalid: !message.valid && submitted }"
+          name="message" id="yourMessageField" class="messageField" type="text" required />
+
+        <input #message="ngModel" [(ngModel)]="contactDatas.message" [class]="{ invalid: !message.valid && submitted }"
+          name="message" id="yourMessageFieldMobile" class="messageField" type="text" required
+          placeholder="{{ 'contact.formFields.message.label' | translate }}" />
 
         <div class="checkArea">
           <div class="agreementArea">
@@ -90,12 +92,12 @@
 
 
               <div class="privacyText">{{
-                  'contact.formFields.message.privacyText' | translate
+                'contact.formFields.message.privacyText' | translate
                 }} <a [routerLink]="'/privacy-policy'">privacy policy</a>
                 {{
-                  'contact.formFields.message.privacyText2' | translate
+                'contact.formFields.message.privacyText2' | translate
                 }}
-</div>
+              </div>
             </div>
             @if (!privacyCheckbox.valid && submitted) {
             <span id="error_text" [class]="{ errorText: !privacyCheckbox.valid && submitted }">{{
@@ -111,12 +113,12 @@
                 message.valid &&
                 name.valid &&
                 email.valid
-            }" type="submit" value="Send" name="submitButton"/>
+            }" type="submit" value="Send" name="submitButton" />
         </div>
       </div>
-              <a href="#hero">
-      <div class="arrowUpDefaultMobile"></div>
-    </a>
+      <a href="#hero">
+        <div class="arrowUpDefaultMobile"></div>
+      </a>
     </div>
   </form>
 </section>

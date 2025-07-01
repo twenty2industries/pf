@@ -334,34 +334,16 @@ input {
   }
 }
 
-@media (max-width: 1200px) {
-}
-
 @media (max-width: 1000px) {
-  #yourNameField {
+  #yourNameField, #yourEmailField, #yourMessageField  {
     display: none;
   }
 
-  #yourEmailField {
-    display: none;
-  }
 
-  #yourMessageField {
-    display: none;
-  }
-
-  #yourNameFieldMobile {
+  #yourNameFieldMobile, #yourEmailFieldMobile, #yourMessageFieldMobile {
     display: flex;
   }
-
-  #yourEmailFieldMobile {
-    display: flex;
-  }
-
-  #yourMessageFieldMobile {
-    display: flex;
-  }
-
+  
   #yourMessageFieldMobile.invalid {
     border-color: #e44c36;
   }
@@ -389,12 +371,15 @@ input {
     margin-top: 0;
   }
   .input {
-    align-items: center;
+    width: auto;
+    align-items: start;
     flex-direction: column-reverse;
-    text-align: center;
+    text-align: start;
     margin-bottom: 2rem;
+    gap: 2rem;
   }
   .formularInput {
+      margin-top: 5rem;
     flex-direction: column;
   }
   .text {
@@ -402,8 +387,13 @@ input {
     @include dFlex(center, center);
     gap: 3rem;
     margin-bottom: 2rem;
+
+    p{
+      font-size: 1.6rem;
+    }
   }
   .messageInput {
+    align-items: center;
     width: 44.5rem;
     .messageField {
       width: 100%;
@@ -434,11 +424,48 @@ input {
   }
 }
 
-@media (max-width: 656px) {
+@media (max-width: 505px) {
+  .messageInput{
+    width: auto;
+  }
+  .checkArea{
+    width: 75%;
+    margin-bottom: 3rem;
+  }
+  .submitArea{
+    width: 69%;
+    margin-bottom: 3rem;
+  }
+  .text{
+    p{
+      width: 35rem;
+    }
+  }
+    #yourNameFieldMobile, #yourEmailFieldMobile, #yourMessageFieldMobile {
+    width: 30rem;
+  }
+  
 }
 
-@media (max-width: 565px) {
-}
-
-@media (max-width: 443px) {
+@media (max-width: 390px) {
+    .messageInput{
+    width: auto;
+  }
+  .checkArea{
+    width: 75%;
+    margin-bottom: 3rem;
+  }
+  .submitArea{
+    width: 69%;
+    margin-bottom: 3rem;
+  }
+  .text{
+    p{
+      width: 28rem;
+    }
+  }
+    #yourNameFieldMobile, #yourEmailFieldMobile, #yourMessageFieldMobile {
+    width: 28rem;
+  }
+  
 }

@@ -7,14 +7,14 @@ import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-header',
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [TranslatePipe, TranslateDirective,],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
   @Input() headerData!: HeaderData;
   activeLanguage: string = 'en';
-   activeLink: string = '#hero';
+  activeLink: string = '#hero';
 
   constructor(private translate: TranslateService) {
     this.changeLanguage;

@@ -1,0 +1,162 @@
+@import "../../mixins.scss";
+
+#burgerMenu {
+  @include dFlex(space-between, center);
+  margin: 5rem 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  button.menu {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    position: relative;
+
+    .burger-icon {
+      width: 100%;
+      height: 3px;
+      background: #ffffff;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: background 0.3s ease;
+
+      &::before,
+      &::after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: #ffffff;
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease;
+      }
+
+      &::before {
+        top: -8px;
+      }
+
+      &::after {
+        top: 8px;
+      }
+    }
+
+    &.is-active .burger-icon {
+      background: transparent;
+
+      &::before {
+        transform: rotate(45deg);
+        top: 0;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+        top: 0;
+      }
+    }
+  }
+}
+
+.content {
+  display: none;
+
+  &.active {
+    @include dFlex(center, center);
+    width: 35.3rem;
+    height: 37rem;
+    right: 2rem;
+    top: 10rem;
+    position: fixed;
+    background-image: url('../../../../public/images/ui/menu/bgBurgerMenu.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+    flex-direction: column;
+
+    nav {
+      @include dFlex(center, center);
+      flex-direction: column;
+      gap: 3rem;
+
+      a {
+        color: #000000;
+        font-size: 2.6rem;
+        font-family: "Josefin Sans";
+
+        &:hover {
+          color: white;
+        }
+
+        &:active {
+          color: white;
+          background-image: url("../../../../public/images/sections/header/bgEllipse.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+
+    .languageSelect {
+      @include dFlex(center, center);
+      gap: 2rem;
+      margin-top: 3rem;
+
+      button {
+        color: #000000;
+        width: 2rem;
+        background: none;
+        font-family: "Josefin Sans";
+        font-size: 1.8rem;
+        border: none;
+
+        &.active {
+          color: white;
+          background-image: url("../../../../public/images/sections/navBar/languageElipse.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 921px) {
+  #burgerMenu {
+    display: none;
+  }
+
+  .content {
+    display: flex;
+    position: static;
+    height: auto;
+    flex-direction: row;
+    background: transparent;
+    padding: 0;
+
+    nav {
+      flex-direction: row;
+      gap: 5rem;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .content.active {
+    height: 28rem;
+    margin: 5rem auto;
+    left: 50%;
+    transform: translateX(-50%);
+    .languageSelect{
+      margin-top: 1rem;
+    }
+  }
+}
+

@@ -18,7 +18,6 @@ footer {
       flex-direction: column;
       font-family: "Josefin Sans";
       color: black;
-      
     }
 
     span {
@@ -35,11 +34,11 @@ footer {
   }
 }
 
-a{
+a {
   color: #2f4655;
   font-size: 1.8rem;
 }
-.legalNoticeMobile{
+.legalNoticeMobile {
   display: none;
 }
 
@@ -88,7 +87,7 @@ a{
 
 @media (max-width: 680px) {
   footer {
-    .socials{
+    .socials {
       gap: 3rem;
     }
     .content {
@@ -97,27 +96,27 @@ a{
       height: 24rem;
       gap: 2rem;
       .legalNotice {
-        display:  none;
+        display: none;
       }
     }
   }
 
-      .legalNoticeMobile{
-              @include dFlex(space-between, center);
-      font-family: "Josefin Sans";
-      color: black;
-      width: 100%;
-      }
+  .legalNoticeMobile {
+    @include dFlex(space-between, center);
+    font-family: "Josefin Sans";
+    color: black;
+    width: 100%;
+  }
 }
 
-    a {
-      font-size: 1.8rem;
-      transition: color 0.17s ease-in-out;
+a {
+  font-size: 1.8rem;
+  transition: color 0.17s ease-in-out;
 
-      &:hover {
-        color: white;
-      }
-    }
+  &:hover {
+    color: white;
+  }
+}
 
 @media (max-width: 565px) {
   footer {
@@ -128,4 +127,15 @@ a{
 }
 
 @media (max-width: 443px) {
+  a {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    .content {
+      span {
+        font-size: 1.4rem;
+      }
+    }
+  }
 }

@@ -29,7 +29,7 @@ section {
 
   &:hover {
     background: url("../../../../public/images/sections/hero/bgShapeHover.png");
-      background-size: contain;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -70,9 +70,9 @@ section {
   align-items: end;
   flex-direction: column;
 
-  .mail,
-  .gitHub,
-  .linkedIn {
+  #mail,
+  #github,
+  #linkedin {
     width: 32px;
     height: 32px;
     background-size: contain;
@@ -81,21 +81,21 @@ section {
     cursor: pointer;
   }
 
-  .mail {
+  #mail {
     background-image: url("../../../../public/images/socials/mail/mailDefault.png");
     &:hover {
       background-image: url("../../../../public/images/socials/mail/mailHover.png");
     }
   }
 
-  .gitHub {
+  #github {
     background-image: url("../../../../public/images/socials/github/githubDefault.png");
     &:hover {
       background-image: url("../../../../public/images/socials/github/githubHover.png");
     }
   }
 
-  .linkedIn {
+  #linkedin {
     background-image: url("../../../../public/images/socials/linkedin/linkedinDefault.png");
     &:hover {
       background-image: url("../../../../public/images/socials/linkedin/linkedinHover.png");
@@ -169,7 +169,7 @@ h2 {
 }
 
 @media (max-width: 656px) {
-  section{
+  section {
     margin: 1rem;
   }
   h1 {
@@ -179,21 +179,68 @@ h2 {
     font-size: 2.4rem;
   }
 
-  .devPicture{
+  .devPicture {
     margin-bottom: 5rem;
     height: 52rem;
   }
 }
 
-@media (max-width: 390px) {
-
-  img {
-    width: 31rem;
-    height: 37rem;
+@media (max-width: 543px) {
+  section {
+    margin: 1rem;
   }
-  .devPicture{
-    height: 43rem;
-    margin: 2rem;
+  h1 {
+    font-size: 4.8rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  .devPicture {
+    margin-bottom: 5rem;
+    height: 40rem;
+    #profilePhoto {
+      height: 40rem;
+    }
   }
 }
 
+@media (max-width: 416px) {
+  section {
+    margin: 1rem;
+  }
+  h1 {
+    font-size: 4.8rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  .devPicture {
+    margin-bottom: 5rem;
+    height: 33rem;
+    #profilePhoto {
+      height: 33rem;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  section {
+    margin: 1rem;
+  }
+  h1 {
+    font-size: 3.8rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+
+  .devPicture {
+    margin-bottom: 5rem;
+    height: 33rem;
+    #profilePhoto {
+      height: 33rem;
+    }
+  }
+}
