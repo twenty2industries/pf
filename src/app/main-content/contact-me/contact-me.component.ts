@@ -14,6 +14,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrl: './contact-me.component.scss',
 })
 export class ContactMeComponent {
+  isSubmitted = false; // Standardwert
+
 
   http = inject(HttpClient);
 

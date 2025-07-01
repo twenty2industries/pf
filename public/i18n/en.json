@@ -181,5 +181,9 @@
       "TITLE": "Contact our Data Protection Officer",
       "EMAIL": "Email: privacy@coup-studios.com"
     }
+  },
+  "contactConfirmation": {
+    "confirmationMessage": "Your message was sent successfully",
+    "confirmationClose": "close"
   }
 }

@@ -106,15 +106,24 @@
           </div>
         </div>
 
-        <div class="submitArea">
-          <input class="submitButton" [class]="{
-              readyToSubmit:
-                privacyCheckbox.valid &&
-                message.valid &&
-                name.valid &&
-                email.valid
-            }" type="submit" value="Send" name="submitButton" />
-        </div>
+<div class="submitArea">
+  <input 
+    class="submitButton"
+    [class.readyToSubmit]="contactForm.form.valid"
+    type="submit" 
+    value="Send" 
+    (click)="isSubmitted = contactForm.form.valid"
+  />
+
+  @if (isSubmitted) {
+    <div class="overlay">
+      <div class="overlay-content">
+        <p>{{'contactConfirmation.confirmationMessage' | translate}}</p>
+        <button (click)="isSubmitted = false">{{'contactConfirmation.confirmationClose' | translate}}</button>
+      </div>
+    </div>
+  }
+</div>
       </div>
       <a href="#hero">
         <div class="arrowUpDefaultMobile"></div>

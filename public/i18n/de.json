@@ -185,5 +185,9 @@
       "TITLE": "Kontakt zum Datenschutzbeauftragten",
       "EMAIL": "E-Mail: datenschutz@coup-studios.com"
     }
+  },
+    "contactConfirmation": {
+    "confirmationMessage": "Ihre Nachricht wurde erfolgreich versendet.",
+    "confirmationClose": "schließen"
   }
 }
