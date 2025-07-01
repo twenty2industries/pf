@@ -4,35 +4,40 @@
   @include dFlex(start, start);
   flex-direction: column;
   color: white;
-  padding: 5rem 2rem;
-  border-radius: 2rem;
-  max-width: 1920px;
+  padding: 2rem; /* Fester Basiswert */
+  border-radius: 2rem; /* Feste Rundung */
+  max-width: min(90%, 1920px); /* Flexibel, aber mit Max-Limit */
   margin: 0 auto;
   animation: smoothFadeIn 1s ease-out forwards;
+
+  /* Container-Inhalt skaliert proportional */
+  > * {
+    width: 100%;
+    box-sizing: border-box;
+  }
 
   h1, h2 {
     font-family: "Josefin Sans";
     color: #89bcd9;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem; /* Fester Abstand */
     text-align: start;
+    font-size: min(2.5rem, 5vw); /* Schrift skaliert nur bis 2.5rem */
   }
 
   .address {
     font-style: normal;
-    margin: 2rem 0;
+    margin: 1.5rem 0; /* Feste Abstände */
   }
 
   div {
-    width: 100%;
-    padding: 2rem;
-    margin-bottom: 3rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
     border-bottom: 1px solid rgba(#89bcd9, 0.3);
-
   }
 
   p, a {
     font-family: "Josefin Sans";
-    font-size: 1.8rem;
+    font-size: min(1.8rem, 3.5vw); /* Skaliert, aber nicht unter 1.8rem */
     line-height: 1.6;
     margin: 1rem 0;
   }
@@ -46,5 +51,12 @@
       color: white;
       text-decoration: underline;
     }
+  }
+
+  /* Responsive Anpassungen ohne Media Queries */
+  @media (hover: none) and (pointer: coarse) {
+    /* Optional: Feinabstimmung für Touch-Geräte */
+    padding: 1.5rem;
+    h1, h2 { font-size: 2rem; }
   }
 }

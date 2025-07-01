@@ -4,24 +4,24 @@
   @include dFlex(center, center);
   flex-direction: column;
   color: white;
-  padding: 5rem;
+  padding: min(5rem, 5vw); // Stabil bis 5rem, dann proportional
   border-radius: 2rem;
-  max-width: 1920px;
+  max-width: min(1920px, 90%); // Flexibel mit Max-Limit
   margin: 0 auto;
   animation: smoothFadeIn 1s ease-out forwards;
 
-  h1,
-  h2 {
+  h1, h2 {
     font-family: "Josefin Sans";
     color: #89bcd9;
-    margin-bottom: 2rem;
+    margin-bottom: min(2rem, 3vw); // Fester Abstand mit Obergrenze
     text-align: start;
+    font-size: min(3rem, 5vw); // Skaliert zwischen 3rem und 5vw
   }
 
   section {
     width: 100%;
-    padding: 2rem;
-    margin-bottom: 3rem;
+    padding: min(2rem, 3vw);
+    margin-bottom: min(3rem, 4vw);
     border-bottom: 1px solid rgba(#89bcd9, 0.3);
 
     &:last-child {
@@ -29,52 +29,14 @@
     }
   }
 
-  ul {
-    li {
-      font-family: "Josefin Sans";
-      font-size: 1.8rem;
-      margin: 1rem 0;
-    }
+  ul li {
+    font-family: "Josefin Sans";
+    font-size: min(1.8rem, 3vw); // Mindestgröße 1.8rem
+    margin: min(1rem, 1.5vw) 0;
   }
-}
 
-p {
-  font-family: "Josefin Sans";
-}
-@media (max-width: 920px) {
-  .imprint-container {
-    padding: 3rem;
-
-    h1 {
-      font-size: 2.4rem;
-    }
-    h2 {
-      font-size: 2rem;
-    }
-
-    p,
-    li {
-      font-family: "Josefin Sans";
-      font-size: 1.6rem;
-    }
-  }
-}
-
-@media (max-width: 565px) {
-  .imprint-container {
-    padding: 2rem;
-
-    h1 {
-      font-size: 2rem;
-    }
-    h2 {
-      font-size: 1.8rem;
-    }
-
-    p,
-    li {
-      font-family: "Josefin Sans";
-      font-size: 1.4rem;
-    }
+  p {
+    font-family: "Josefin Sans";
+    font-size: min(1.8rem, 3vw); // Konsistente Skalierung
   }
 }
