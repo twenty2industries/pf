@@ -283,7 +283,7 @@ h1 {
   .projectDetailMobile {
     gap: 0.5rem;
     margin: 2rem 0rem;
-    @include dFlex(center, start);
+    @include dFlex(center, center);
     flex-direction: column;
     width: 100%;
   }
@@ -314,6 +314,10 @@ h1 {
       }
     }
   }
+}
+
+a{
+  background-color: none;
 }
 
 @media (max-width: 565px) {

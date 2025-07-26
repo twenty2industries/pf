@@ -14,22 +14,21 @@ import { HttpClient } from '@angular/common/http';
   styleUrl: './contact-me.component.scss',
 })
 export class ContactMeComponent {
-  isSubmitted = false; // Standardwert
-
+  isSubmitted = false;
 
   http = inject(HttpClient);
 
   @Input() contactData!: ContactFormData;
 
   submitted: boolean = false;
-
+  success: boolean = false;
+  
   contactDatas = {
     name: '',
     email: '',
     message: '',
     checked: false,
   };
-
 
   mailTest = false;
 
@@ -45,19 +44,26 @@ export class ContactMeComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    this.submitted = true;
+
+    if (ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactDatas))
         .subscribe({
           next: (response) => {
-
+            this.success = true; 
             ngForm.resetForm();
+            this.submitted = false; 
           },
           error: (error) => {
+            this.success = false;
           },
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+    } else if (ngForm.form.valid && this.mailTest) {
+      this.success = true;
       ngForm.resetForm();
+      this.submitted = false;
+    } else {
+      this.success = false;
     }
   }
 }

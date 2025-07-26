@@ -335,15 +335,18 @@ input {
 }
 
 @media (max-width: 1000px) {
-  #yourNameField, #yourEmailField, #yourMessageField  {
+  #yourNameField,
+  #yourEmailField,
+  #yourMessageField {
     display: none;
   }
 
-
-  #yourNameFieldMobile, #yourEmailFieldMobile, #yourMessageFieldMobile {
+  #yourNameFieldMobile,
+  #yourEmailFieldMobile,
+  #yourMessageFieldMobile {
     display: flex;
   }
-  
+
   #yourMessageFieldMobile.invalid {
     border-color: #e44c36;
   }
@@ -379,7 +382,7 @@ input {
     gap: 2rem;
   }
   .formularInput {
-      margin-top: 5rem;
+    margin-top: 5rem;
     flex-direction: column;
   }
   .text {
@@ -388,7 +391,7 @@ input {
     gap: 3rem;
     margin-bottom: 2rem;
 
-    p{
+    p {
       font-size: 1.6rem;
     }
   }
@@ -426,55 +429,60 @@ input {
 }
 
 @media (max-width: 654px) {
-h1{
-  font-size: 3.2rem;
-}
+  h1 {
+    font-size: 3.2rem;
+  }
 }
 
 @media (max-width: 505px) {
-  .messageInput{
+  .messageInput {
     width: auto;
   }
-  .checkArea{
+  .checkArea {
     width: 75%;
     margin-bottom: 3rem;
+    .checkBox {
+      width: 10rem;
+    }
   }
-  .submitArea{
+  .submitArea {
     width: 69%;
     margin-bottom: 3rem;
   }
-  .text{
-    p{
+  .text {
+    p {
       width: 35rem;
     }
   }
-    #yourNameFieldMobile, #yourEmailFieldMobile, #yourMessageFieldMobile {
+  #yourNameFieldMobile,
+  #yourEmailFieldMobile,
+  #yourMessageFieldMobile {
     width: 30rem;
   }
-  
 }
 
 @media (max-width: 390px) {
-    .messageInput{
+  .messageInput {
     width: auto;
   }
-  .checkArea{
+  .checkArea {
     width: 75%;
     margin-bottom: 3rem;
   }
-  .submitArea{
+  .submitArea {
     width: 69%;
     margin-bottom: 3rem;
   }
-  .text{
-    p{
+  .text {
+    p {
       width: 28rem;
     }
   }
-    #yourNameFieldMobile, #yourEmailFieldMobile, #yourMessageFieldMobile {
+  #yourNameFieldMobile,
+  #yourEmailFieldMobile,
+  #yourMessageFieldMobile {
     width: 28rem;
   }
-  
 }
 
 .overlay {
@@ -511,8 +519,12 @@ h1{
 
 /* Animation für sanftes Einblenden */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .overlay {
@@ -521,11 +533,11 @@ h1{
 
 /* Animation für Overlay-Content */
 @keyframes slideUp {
-  from { 
+  from {
     transform: translateY(20px);
     opacity: 0;
   }
-  to { 
+  to {
     transform: translateY(0);
     opacity: 1;
   }

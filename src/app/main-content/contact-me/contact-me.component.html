@@ -79,21 +79,19 @@
 
         <input #message="ngModel" [(ngModel)]="contactDatas.message" [class]="{ invalid: !message.valid && submitted }"
           name="message" id="yourMessageField" class="messageField" type="text" required />
-
         <input #message="ngModel" [(ngModel)]="contactDatas.message" [class]="{ invalid: !message.valid && submitted }"
           name="message" id="yourMessageFieldMobile" class="messageField" type="text" required
           placeholder="{{ 'contact.formFields.message.label' | translate }}" />
-
         <div class="checkArea">
           <div class="agreementArea">
             <div id="privacy">
               <input [(ngModel)]="contactDatas.checked" #privacyCheckbox="ngModel" [class.submitted]="submitted"
                 class="checkBox" type="checkbox" name="privacyCheckbox" required />
-
-
               <div class="privacyText">{{
                 'contact.formFields.message.privacyText' | translate
-                }} <a [routerLink]="'/privacy-policy'">privacy policy</a>
+                }} <a [routerLink]="'/privacy-policy'">{{
+                  'contact.formFields.message.privacyPolicyText' | translate
+                  }}</a>
                 {{
                 'contact.formFields.message.privacyText2' | translate
                 }}
@@ -105,25 +103,18 @@
             }
           </div>
         </div>
-
-<div class="submitArea">
-  <input 
-    class="submitButton"
-    [class.readyToSubmit]="contactForm.form.valid"
-    type="submit" 
-    value="Send" 
-    (click)="isSubmitted = contactForm.form.valid"
-  />
-
-  @if (isSubmitted) {
-    <div class="overlay">
-      <div class="overlay-content">
-        <p>{{'contactConfirmation.confirmationMessage' | translate}}</p>
-        <button (click)="isSubmitted = false">{{'contactConfirmation.confirmationClose' | translate}}</button>
-      </div>
-    </div>
-  }
-</div>
+        <div class="submitArea">
+          <input class="submitButton" [class.readyToSubmit]="contactForm.form.valid" type="submit" value="Send"
+            (click)="submitted = true" />
+          @if (success) {
+          <div class="overlay">
+            <div class="overlay-content">
+              <p>{{'contactConfirmation.confirmationMessage' | translate}}</p>
+              <button (click)="success = false">{{'contactConfirmation.confirmationClose' | translate}}</button>
+            </div>
+          </div>
+          }
+        </div>
       </div>
       <a href="#hero">
         <div class="arrowUpDefaultMobile"></div>

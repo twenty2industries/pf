@@ -4,6 +4,12 @@ export interface WhyMeData {
     path: string;
     alt: string;
   };
+  reLocateIcon: {
+    path: string;
+  };
+  homeOffice: {
+    path: string;
+  };
   texts: {
     locationText: string;
     whyMeText: string;

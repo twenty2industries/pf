@@ -67,24 +67,24 @@ export class FeedbackComponent {
     { id: 3, userName: 'feedback.feedback3.userName', projectName: 'feedback.feedback3.projectName' }
   ];
 
-  isDragging = false;
-  startX = 0;
-  scrollLeft = 0;
+  isDragging:boolean = false;
+  startX:number = 0;
+  scrollLeft:number = 0;
   container?: HTMLElement;
 
-  startDrag(e: MouseEvent | TouchEvent) {
-    this.container = (e.currentTarget as HTMLElement);
-    this.isDragging = true;
-    this.startX = ('pageX' in e ? e.pageX : e.touches[0].pageX) - this.container.offsetLeft;
-    this.scrollLeft = this.container.scrollLeft;
+  startDrag(e: MouseEvent | TouchEvent) { // (e - value) || start the dragging 
+    this.container = (e.currentTarget as HTMLElement);// saves the first drag point
+    this.isDragging = true;// flag acrtivated as soon as mouseevent is happening 
+    this.startX = ('pageX' in e ? e.pageX : e.touches[0].pageX) - this.container.offsetLeft; //calculates the first drag point e.page for desktop e.touches for phones
+    this.scrollLeft = this.container.scrollLeft; // saves the current.container scrolling point
   }
 
   onDrag(e: MouseEvent | TouchEvent) {
-    if (!this.isDragging || !this.container) return;
-    e.preventDefault();
-    const x = ('pageX' in e ? e.pageX : e.touches[0].pageX) - this.container.offsetLeft;
-    const walk = (x - this.startX) * 2;
-    this.container.scrollLeft = this.scrollLeft - walk;
+    if (!this.isDragging || !this.container) return; //if the flag is false or the unexpected 
+    e.preventDefault(); // prevents grabbing text, there is also a scss way of doing this 
+    const x = ('pageX' in e ? e.pageX : e.touches[0].pageX) - this.container.offsetLeft; // x is the current position 
+    const walk = (x - this.startX) * 2; //walk is the dragging distance (*2 for speed)
+    this.container.scrollLeft = this.scrollLeft - walk; //saves the current scrolling point  
   }
 
   endDrag() {

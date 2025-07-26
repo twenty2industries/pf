@@ -1,13 +1,15 @@
 <section id="why-me">
   <h1>{{ 'why-me.title' | translate }}</h1>
-  <div>
-    <img [src]="whymeData.locationIcon.path" [alt]="whymeData.locationIcon.alt">
+  <div id="content">
+    <div class="typingEffectContent">
+      <img #currentIcon [src]="whymeData.locationIcon.path" [alt]="whymeData.locationIcon.alt" class="typing-icon">
+<div #typingText class="typingEffectText" [innerHTML]="currentText"></div>    </div>
+
     <span>
       {{ 'why-me.whyMeText' | translate }}
       <a href="#contact">
-                <button>Let's Talk</button>
+        <button>Let's Talk</button>
       </a>
-
     </span>
   </div>
 </section>

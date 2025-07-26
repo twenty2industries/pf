@@ -4,18 +4,19 @@
   @include dFlex(center, center);
   flex-direction: column;
   color: white;
-  padding: min(5rem, 5vw); // Stabil bis 5rem, dann proportional
+  padding: min(5rem, 5vw);
   border-radius: 2rem;
-  max-width: min(1920px, 90%); // Flexibel mit Max-Limit
+  max-width: min(1920px, 90%);
   margin: 0 auto;
   animation: smoothFadeIn 1s ease-out forwards;
 
-  h1, h2 {
+  h1,
+  h2 {
     font-family: "Josefin Sans";
     color: #89bcd9;
-    margin-bottom: min(2rem, 3vw); // Fester Abstand mit Obergrenze
+    margin-bottom: min(2rem, 3vw);
     text-align: start;
-    font-size: min(3rem, 5vw); // Skaliert zwischen 3rem und 5vw
+    font-size: min(3rem, 5vw);
   }
 
   section {
@@ -31,12 +32,12 @@
 
   ul li {
     font-family: "Josefin Sans";
-    font-size: min(1.8rem, 3vw); // Mindestgröße 1.8rem
+    font-size: min(1.8rem, 3vw);
     margin: min(1rem, 1.5vw) 0;
   }
 
   p {
     font-family: "Josefin Sans";
-    font-size: min(1.8rem, 3vw); // Konsistente Skalierung
+    font-size: min(1.8rem, 3vw);
   }
 }

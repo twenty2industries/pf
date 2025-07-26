@@ -36,6 +36,12 @@ export class MainContentComponent {
       path: 'images/sections/whyMe/locationDefault.png',
       alt: 'Location icon',
     },
+        reLocateIcon: {
+      path: 'images/sections/whyMe/relocateDefault.png',
+    },
+            homeOffice: {
+      path: 'images/sections/whyMe/remoteDefault.png',
+    },
     texts: {
       locationText: 'First text for typing effect',
       whyMeText:

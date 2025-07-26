@@ -2,7 +2,7 @@
   "why-me": {
     "title": "Why me",
     "locationText": "First text for typing effect",
-    "whyMeText": "Why are you passionate about coding? You can include some key traits like: analytical thinking, creativity, persistence and collaboration. A problem-solving mindset is always nice to have.",
+    "whyMeText": "I've always been fascinated by technology – from networks to software solutions. Coding provides the ideal challenge: analyzing problems with focus, developing user-friendly solutions, and always keeping an eye on what really matters.",
     "talkButtonAlt": "Talk to me button"
   },
 
@@ -47,8 +47,8 @@
       "message": {
         "label": "Your message",
         "privacyText": " I've read the ",
-        "privacyText2": "and agree to the processing of my data as outlined."
-
+        "privacyText2": "and agree to the processing of my data as outlined.",
+        "privacyPolicyText": "privacy policy"
       }
     },
     "descriptionText": "Feel free to get in touch with job offers or opportunities such as: ... Show that you will add value to their projects through your work."
@@ -85,7 +85,7 @@
 
   "currentLearning": {
     "templateText": "I am currently learning",
-    "inputText": " that you are motivated to continually improve your skills, implement innovative solutions and stay abreast of new technologies."
+    "inputText": "I’m highly motivated to continuously improve my skills, implement innovative solutions, and stay up to date with the latest technologies to create modern and efficient web applications."
   },
 
   "PROJECTS": {
@@ -98,32 +98,38 @@
         "ABOUT_TITLE": "About the project",
         "ABOUT_CONTENT": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the Chicken.",
         "WORK_PROCESS_TITLE": "How I have organised my work process",
-        "WORK_PROCESS_CONTENT": "How do you keep your code clean and maintainable? Have you broken the project down into reusable modules or components? Focus on documentation, naming files, variables, classes and testing.",
-        "LEARNINGS_TITLE": "What I have learnt",
+        "WORK_PROCESS_CONTENT": "For “El Polo Loco,” I organized my workflow by breaking down game features into distinct phases such as level design, controls, and enemy behavior. This approach helped me work systematically, prioritize tasks, and maintain a clear overview.",
+        "LEARNINGS_TITLE": "My work experience",
         "LEARNINGS_CONTENT": "As someone who is always trying to learn new technologies, you may have enjoyed working on this project because it allowed you to delve deep into a particular technology. Give details, such as the name of the framework or language you mean."
       },
       "URL": "Play Game"
     },
+
     "JOIN": {
       "TITLE": "Join",
-      "DURATION": "Duration: 5 weeks",
+      "DURATION": "Duration: 3 weeks",
       "DESCRIPTION": "Task manager inspired by the Kanban System.",
       "BULLET_POINTS": {
         "ABOUT_TITLE": "About the project",
         "ABOUT_CONTENT": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         "WORK_PROCESS_TITLE": "How I have organised my work process",
-        "WORK_PROCESS_CONTENT": "How do you keep your code clean and maintainable? Have you broken the project down into reusable modules or components? Focus on documentation, naming files, variables, classes and testing.",
+        "WORK_PROCESS_CONTENT": "I organized the project with a clear module structure, meaningful naming, and thorough documentation. This keeps the code clean and maintainable, which is especially important when implementing complex game logic.",
         "LEARNINGS_TITLE": "My group work experience",
-        "LEARNINGS_CONTENT": "How many people were in the team and what was your role? Describe your tasks in 1-2 sentences. It is nice to mention a good teamwork and cooperation."
+        "LEARNINGS_CONTENT": "We were a team of four, and the collaboration was excellent. My main responsibility was implementing the core logic of the app, working closely with the others throughout the process."
       },
       "URL": "Try it now"
     },
+
     "ONGOING_PROJECT": {
       "TITLE": "Ongoing Project",
-      "DESCRIPTION": "Task manager inspired by the Kanban System.",
+      "DESCRIPTION": "Live F1 betting app using virtual coins and private friend pools.",
       "BULLET_POINTS": {
-        "ABOUT_TITLE": "About the project",
-        "ABOUT_CONTENT": "What are you currently working on and what features are you implementing? What is the key to success in your projects? You can mention good planning, code quality and execution. <br><br> Show a desire to learn new technologies and continually improve your skills."
+        "ABOUT_TITLE": "Overtake™",
+        "ABOUT_CONTENT": "A social Formula 1 live betting app where users bet with virtual coins in private friend pools. It includes real-time features, personal profiles, and detailed statistics such as win rates against other friends in a round-based format.",
+        "WORK_PROCESS_TITLE": "How I have organised my work process",
+        "WORK_PROCESS_CONTENT": "I structured the project using reusable and well-named components, clean modular code, and consistent styling. Focused on clear file structure, predictable state management and future scalability. Attention to clean documentation and naming conventions helped keep everything maintainable.",
+        "LEARNINGS_TITLE": "My work experience",
+        "LEARNINGS_CONTENT": "This was my first project using React. I focused on learning the fundamentals of component-based development, state management, and dynamic UI updates. It taught me how to structure a scalable codebase and think in reusable, modular units."
       },
       "URL": "Try it now"
     }
@@ -150,7 +156,7 @@
     }
   },
 
-    "PRIVACY": {
+  "PRIVACY": {
     "TITLE": "Privacy Policy",
     "INTRO": "Controller under data protection laws:",
     "DATA_COLLECTION": {
@@ -185,5 +191,8 @@
   "contactConfirmation": {
     "confirmationMessage": "Your message was sent successfully",
     "confirmationClose": "close"
-  }
+  },
+  "LOCATION": "I am located in Ingolstadt...|",
+  "REMOTE_WORK": "I am open to work remote...|",
+  "RELOCATION": "I am open to relocate...|"
 }

@@ -3,12 +3,13 @@
 
   <div class="navContent">
     <nav>
+      <span (click)="selectedProject = 'JOIN'" [class.active]="selectedProject === 'JOIN'">
+        1. {{ 'PROJECTS.JOIN.TITLE' | translate }}
+      </span>
       <span (click)="selectedProject = 'EL_POLO_LOCO'" [class.active]="selectedProject === 'EL_POLO_LOCO'">
         1. {{ 'PROJECTS.EL_POLO_LOCO.TITLE' | translate }}
       </span>
-      <span (click)="selectedProject = 'JOIN'" [class.active]="selectedProject === 'JOIN'">
-        2. {{ 'PROJECTS.JOIN.TITLE' | translate }}
-      </span>
+
       <span (click)="selectedProject = 'ONGOING_PROJECT'" [class.active]="selectedProject === 'ONGOING_PROJECT'">
         3. {{ 'PROJECTS.ONGOING_PROJECT.TITLE' | translate }}
       </span>
@@ -57,7 +58,8 @@
             <img src="images/sections/myProjects/elpololoco.png" alt="El Polo Loco Screenshot">
           </div>
           <div class="buttonArea">
-            <a href="https://burak-bostanli.developerakademie.net/ElPoloLoco/index.html" target="_blank" class="testButton">{{ 'PROJECTS.EL_POLO_LOCO.URL' | translate }}</a>
+            <a href="https://burak-bostanli.developerakademie.net/ElPoloLoco/index.html" target="_blank"
+              class="testButton">{{ 'PROJECTS.EL_POLO_LOCO.URL' | translate }}</a>
             <a href="https://github.com/twenty2industries/elpolloloco" target="_blank" class="testButton">GitHub</a>
           </div>
 
@@ -98,11 +100,12 @@
           </div>
           <span class="techText"> Technologies</span>
           <div class="icons">
+            <img src="images/sections/mySkills/htmlDefault.png">
             <img src="images/sections/mySkills/angularDefault.png">
             <img src="images/sections/mySkills/tsDefault.png">
             <img src="images/sections/mySkills/cssDefault.png">
-
           </div>
+          
           <div class="projectPictures">
             <img src="images/sections/myProjects/join.png" alt="Join Screenshot">
           </div>
@@ -124,6 +127,18 @@
             <h3>{{ 'PROJECTS.ONGOING_PROJECT.BULLET_POINTS.ABOUT_TITLE' | translate }}</h3>
           </div>
           <p [innerHTML]="'PROJECTS.ONGOING_PROJECT.BULLET_POINTS.ABOUT_CONTENT' | translate"></p>
+
+          <div class="bulletPoints">
+            <img src="images/sections/myProjects/elipse.png" alt="">
+            <h3>{{ 'PROJECTS.ONGOING_PROJECT.BULLET_POINTS.WORK_PROCESS_TITLE' | translate }}</h3>
+          </div>
+          <p [innerHTML]="'PROJECTS.ONGOING_PROJECT.BULLET_POINTS.WORK_PROCESS_CONTENT' | translate"></p>
+
+          <div class="bulletPoints">
+            <img src="images/sections/myProjects/elipse.png" alt="">
+            <h3>{{ 'PROJECTS.ONGOING_PROJECT.BULLET_POINTS.LEARNINGS_TITLE' | translate }}</h3>
+          </div>
+          <p [innerHTML]="'PROJECTS.ONGOING_PROJECT.BULLET_POINTS.LEARNINGS_CONTENT' | translate"></p>
         </div>
 
         <div class="projectContainer">
@@ -133,23 +148,24 @@
           </div>
           <span class="techText">Technologies</span>
           <div class="icons">
-            <img src="images/sections/mySkills/angularDefault.png">
+            <img src="images/sections/mySkills/htmlDefault.png">
+            <img src="images/sections/mySkills/reactDefault.png">
             <img src="images/sections/mySkills/tsDefault.png">
+            <img src="images/sections/mySkills/cssDefault.png">
           </div>
           <div class="projectPictures">
-            <img src="images/sections/myProjects/ongoingProject.png" alt="Project Screenshot">
+            <img src="/assets/images/sections/myProjects/overtake.png" alt="Project Screenshot">
           </div>
           <div class="buttonArea">
-            <button class="testButton">{{ 'PROJECTS.EL_POLO_LOCO.URL' | translate }}</button>
-            <button>GitHub</button>
           </div>
         </div>
       </div>
     </div>
     }
     <div class="buttonAreaMobile">
-      <button class="testButton">Live Test</button>
-      <button>GitHub</button>
+      <button class="testButton"> <a href="https://burak-bostanli.developerakademie.net/ElPoloLoco/index.html"
+          target="_blank" class="testButton">{{ 'PROJECTS.EL_POLO_LOCO.URL' | translate }}</a></button>
+      <button> <a href="https://github.com/twenty2industries/elpolloloco" target="_blank">GitHub</a></button>
     </div>
   </div>
 </section>
