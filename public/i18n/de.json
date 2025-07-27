@@ -24,7 +24,7 @@
   "contact": {
     "headline": "Lassen sie uns zusammenarbeiten!",
     "title": "Kontakt",
-    "text": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, an welcher Rolle du interessiert bist. Zeige, dass du durch deine Arbeit einen Mehrwert für ihre Projekte schaffst. Beispiel: Zögere nicht, dich mit Jobangeboten oder Möglichkeiten wie zum Beispiel ...",
+    "text": "Wenn sie nach einem engagierten Frontend-Entwickler suchen, der mit Leidenschaft und Präzision Ihre Projekte bereichert, zögern Sie nicht, mich zu kontaktieren. Ich freue mich auf Jobangebote, Freelance-Möglichkeiten oder gemeinsame Projekte, um zusammen erfolgreich zu sein.",
     "required": {
       "email": "Deine E-Mail ist erforderlich.",
       "name": "Dein Name ist erforderlich.",
@@ -88,7 +88,7 @@
         "WORK_PROCESS_TITLE": "Wie ich meinen Arbeitsprozess organisiert habe",
         "WORK_PROCESS_CONTENT": "Für „El Polo Loco“ habe ich den Arbeitsprozess durch die Planung der Spielfunktionen in einzelne Schritte organisiert, wie Level-Design, Steuerung und Gegnerverhalten. So konnte ich strukturiert vorgehen, Prioritäten setzen und den Überblick behalten.",
         "LEARNINGS_TITLE": "Was ich gelernt habe",
-        "LEARNINGS_CONTENT": "Als jemand, der immer versucht, neue Technologien zu lernen, hat dir dieses Projekt vielleicht gefallen, weil es dir ermöglicht hat, tief in eine bestimmte Technologie einzutauchen. Gib Details an, wie den Namen des Frameworks oder der Sprache."
+        "LEARNINGS_CONTENT": "Dieses Projekt hat mir besonders gefallen, weil ich dadurch die Möglichkeit hatte, mich intensiv mit objektorientierter Programmierung in JavaScript auseinanderzusetzen und ein besseres Verständnis für Spiellogik und Game Loops zu entwickeln."
       },
       "URL": "Spiel starten"
     },
@@ -100,7 +100,7 @@
         "ABOUT_TITLE": "Über das Projekt",
         "ABOUT_CONTENT": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
         "WORK_PROCESS_TITLE": "Wie ich meinen Arbeitsprozess organisiert habe",
-        "WORK_PROCESS_CONTENT": "Klare Modulstruktur, aussagekräftige Benennungen und sorgfältige Dokumentation organisiert. So bleibt der Code übersichtlich und gut wartbar, was besonders bei der Umsetzung komplexer Spiellogik wichtig ist.",
+        "WORK_PROCESS_CONTENT": "Klare Modulstruktur, aussagekräftige Benennungen und sorgfältige Dokumentation organisiert. So bleibt der Code übersichtlich und gut wartbar.",
         "LEARNINGS_TITLE": "Meine Erfahrung mit Gruppenarbeit",
         "LEARNINGS_CONTENT": "Wir waren insgesamt vier Personen im Team, und die Zusammenarbeit war hervorragend. Meine Hauptaufgabe lag in der Umsetzung der zentralen Logik der App, bei der ich eng mit den anderen zusammengearbeitet habe."
       },
@@ -113,9 +113,9 @@
         "ABOUT_TITLE": "Overtake™",
         "ABOUT_CONTENT": "Eine soziale Formel-1-Live-Wett-App, bei der mit virtuellen Coins in privaten Freundesgruppen getippt wird. Die App enthält Echtzeitfunktionen, persönliche Profile und detaillierte Statistiken, z. B. Siegquoten gegen Freunde in rundenbasierten Duellen.",
         "WORK_PROCESS_TITLE": "So habe ich meinen Arbeitsprozess organisiert",
-        "WORK_PROCESS_CONTENT": "Ich habe das Projekt in wiederverwendbare, gut benannte Komponenten strukturiert und auf sauberen, modularen Code geachtet. Eine klare Ordnerstruktur, vorhersehbares State-Management und konsistentes Styling standen im Vordergrund. Saubere Dokumentation und durchdachte Benennung sorgen für langfristige Wartbarkeit.",
+        "WORK_PROCESS_CONTENT": "Aktuell entwickle ich die App mit React und achte dabei auf eine strukturierte Komponentenarchitektur. Ich lege besonderen Wert auf Wiederverwendbarkeit, eine klare Ordnerstruktur und konsistentes Styling mit modularem Code. Durch vorhersehbares State-Management und laufende Dokumentation sorge ich dafür, dass die Anwendung auch in der Weiterentwicklung übersichtlich und wartbar bleibt.",
         "LEARNINGS_TITLE": "Meine Arbeitserfahrung",
-        "LEARNINGS_CONTENT": "Dies war mein erstes Projekt mit React. Ich habe die Grundlagen der komponentenbasierten Entwicklung, des State-Managements und dynamischer Benutzeroberflächen gelernt. Das Projekt hat mir geholfen, eine skalierbare Codebasis aufzubauen und modular zu denken."
+        "LEARNINGS_CONTENT": "Dies ist mein erstes Projekt mit React. Ich lerne gerade die Grundlagen der komponentenbasierten Entwicklung, des State-Managements und der dynamischen Benutzeroberflächen. Das Projekt unterstützt mich dabei, eine skalierbare Codebasis aufzubauen und modular zu denken."
       },
       "URL": "Jetzt ausprobieren"
     }

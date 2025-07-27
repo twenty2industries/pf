@@ -28,7 +28,7 @@
   "contact": {
     "headline": "Let us work togehter!",
     "title": "Contact me",
-    "text": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work. Example: Feel free to get in touch with job offers or opportunities such as: ...",
+    "text": "If you’re looking for a motivated frontend developer eager to learn and contribute to your projects, feel free to reach out! I’m excited about job opportunities, freelance work, or interesting collaborations.",
 
     "required": {
       "email": "Your email is required.",
@@ -100,7 +100,7 @@
         "WORK_PROCESS_TITLE": "How I have organised my work process",
         "WORK_PROCESS_CONTENT": "For “El Polo Loco,” I organized my workflow by breaking down game features into distinct phases such as level design, controls, and enemy behavior. This approach helped me work systematically, prioritize tasks, and maintain a clear overview.",
         "LEARNINGS_TITLE": "My work experience",
-        "LEARNINGS_CONTENT": "As someone who is always trying to learn new technologies, you may have enjoyed working on this project because it allowed you to delve deep into a particular technology. Give details, such as the name of the framework or language you mean."
+        "LEARNINGS_CONTENT": "I especially enjoyed this project because it gave me the opportunity to dive deep into object-oriented programming with JavaScript and to strengthen my understanding of game logic and game loops."
       },
       "URL": "Play Game"
     },
@@ -127,9 +127,9 @@
         "ABOUT_TITLE": "Overtake™",
         "ABOUT_CONTENT": "A social Formula 1 live betting app where users bet with virtual coins in private friend pools. It includes real-time features, personal profiles, and detailed statistics such as win rates against other friends in a round-based format.",
         "WORK_PROCESS_TITLE": "How I have organised my work process",
-        "WORK_PROCESS_CONTENT": "I structured the project using reusable and well-named components, clean modular code, and consistent styling. Focused on clear file structure, predictable state management and future scalability. Attention to clean documentation and naming conventions helped keep everything maintainable.",
+        "WORK_PROCESS_CONTENT": "I am currently developing the app using React, focusing on a well-structured component architecture. I prioritize reusability, a clear folder structure, and consistent styling with modular code. Through predictable state management and continuous documentation, I ensure the application remains maintainable and easy to extend as development progresses.",
         "LEARNINGS_TITLE": "My work experience",
-        "LEARNINGS_CONTENT": "This was my first project using React. I focused on learning the fundamentals of component-based development, state management, and dynamic UI updates. It taught me how to structure a scalable codebase and think in reusable, modular units."
+        "LEARNINGS_CONTENT": "This is my first project with React. I am currently learning the fundamentals of component-based development, state management, and dynamic user interfaces. The project is helping me build a scalable codebase and think modularly."
       },
       "URL": "Try it now"
     }
