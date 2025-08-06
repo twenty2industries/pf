@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact-me',
-  imports: [FormsModule,TranslatePipe, TranslateDirective, RouterModule],
+  imports: [FormsModule,TranslatePipe, RouterModule],
   standalone: true,
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss',

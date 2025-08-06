@@ -5,13 +5,13 @@ import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-my-projects',
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [TranslatePipe],
   templateUrl: './my-projects.component.html',
   styleUrl: './my-projects.component.scss'
 })
 export class MyProjectsComponent {
 @Input() projectData!: ProjectData;
-selectedProject: string = 'ONGOING_PROJECT';
+selectedProject: string = 'JOIN';
 selectedProjectId: number = 1; 
 
 selectProject(id: number) {

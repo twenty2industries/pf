@@ -31,6 +31,8 @@ click: any;
 
   setActiveLink(url: string) {
     this.activeLink = url;
+          this.menuOpen = false;
+
   }
 
   toggleMenu() {

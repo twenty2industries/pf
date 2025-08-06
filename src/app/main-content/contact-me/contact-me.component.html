@@ -28,39 +28,40 @@
       <h3 class="mobileHeadline">{{ "contact.headline" | translate }}</h3>
 
       <div class="formularInput">
+
         <div class="yourName">
-          @if (!name.valid && submitted) {
-          <span [class]="{ errorText: !name.valid && submitted }">{{
+          @if (!name.valid && name.touched  || submitted && !name.valid ) {
+          <span [class]="{ errorText: !name.valid && name.touched || submitted }">{{
             "contact.required.name" | translate
             }}</span>
           } @else {
           <span>{{ "contact.formFields.name.label" | translate }}</span>
-          } @if (name.valid && submitted) {
+          } @if (name.valid) {
           <img src="images/sections/contactMe/agreed.png" alt="" />
           }
-          <input [(ngModel)]="contactDatas.name" [class]="{ invalid: !name.valid && submitted }" #name="ngModel"
+          <input [(ngModel)]="contactDatas.name" [class]="{ invalid: !name.valid && name.touched || submitted && !name.valid }" #name="ngModel"
             name="name" id="yourNameField" class="textField" type="text" required />
 
-          <input [(ngModel)]="contactDatas.name" [class]="{ invalid: !name.valid && submitted }" #name="ngModel"
+          <input [(ngModel)]="contactDatas.name" [class]="{ invalid: !name.valid && name.touched || submitted && !name.valid }" #name="ngModel"
             name="name" id="yourNameFieldMobile" class="textField" type="text" required
             placeholder="{{ 'contact.formFields.name.label' | translate }}" />
         </div>
 
         <div class="yourName">
-          @if (!email.valid && submitted) {
-          <span [class]="{ errorText: !email.valid && submitted }">{{
+          @if (!email.valid && email.touched  || submitted && !email.valid ) {
+          <span [class]="{ errorText: !email.valid && email.touched || submitted && !email.valid }">{{
             "contact.required.email" | translate
             }}</span>
           } @else {
           <span>{{ "contact.formFields.email.label" | translate }}</span>
-          } @if (email.valid && submitted) {
+          } @if (email.valid) {
           <img src="images/sections/contactMe/agreed.png" alt="" />
           }
-          <input [(ngModel)]="contactDatas.email" [class]="{ invalid: !email.valid && submitted }" #email="ngModel"
+          <input [(ngModel)]="contactDatas.email" [class]="{ invalid: !email.valid && email.touched || submitted && !email.valid }" #email="ngModel"
             name="email" id="yourEmailField" class="textField" type="text" required
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
 
-          <input [(ngModel)]="contactDatas.email" [class]="{ invalid: !email.valid && submitted }" #email="ngModel"
+          <input [(ngModel)]="contactDatas.email" [class]="{ invalid: !email.valid && email.touched || submitted && !email.valid }" #email="ngModel"
             name="email" id="yourEmailFieldMobile" class="textField" type="text" required
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
             placeholder="{{ 'contact.formFields.email.label' | translate }}" />
@@ -69,17 +70,17 @@
       </div>
 
       <div class="messageInput">
-        @if (!message.valid && submitted) {
-        <span [class]="{ errorText: !message.valid && submitted }">{{
+        @if (!message.valid && message.touched  || submitted && !message.valid) {
+        <span [class]="{ errorText: !message.valid && message.touched  || submitted && !message.valid }">{{
           "contact.required.message" | translate
           }}</span>
         } @else {
         <span>{{ "contact.formFields.message.label" | translate }}</span>
         }
 
-        <input #message="ngModel" [(ngModel)]="contactDatas.message" [class]="{ invalid: !message.valid && submitted }"
+        <input #message="ngModel" [(ngModel)]="contactDatas.message" [class]="{ invalid: !message.valid && message.touched  || submitted && !message.valid }"
           name="message" id="yourMessageField" class="messageField" type="text" required />
-        <input #message="ngModel" [(ngModel)]="contactDatas.message" [class]="{ invalid: !message.valid && submitted }"
+        <input #message="ngModel" [(ngModel)]="contactDatas.message" [class]="{ invalid: !message.valid && message.touched  || submitted && !message.valid }"
           name="message" id="yourMessageFieldMobile" class="messageField" type="text" required
           placeholder="{{ 'contact.formFields.message.label' | translate }}" />
         <div class="checkArea">
@@ -97,10 +98,14 @@
                 }}
               </div>
             </div>
-            @if (!privacyCheckbox.valid && submitted) {
-            <span id="error_text" [class]="{ errorText: !privacyCheckbox.valid && submitted }">{{
-              "contact.required.privacyText" | translate }}</span>
-            }
+
+            <span id="error_text" [class]="{ errorText: !privacyCheckbox.valid && submitted }">
+                          @if (!privacyCheckbox.valid && submitted) {
+                            {{
+
+              "contact.required.privacyText" | translate }}
+                          }</span>
+            
           </div>
         </div>
         <div class="submitArea">
