@@ -36,9 +36,9 @@
             }}</span>
           } @else {
           <span>{{ "contact.formFields.name.label" | translate }}</span>
-          } @if (name.valid) {
-          <img src="/assets/images/sections/contactMe/agreed.png" alt="" />
-          }
+          }<!--  @if (name.valid) {
+          <img src="assets/images/sections/contactMe/agreedChecked.png" alt="" />
+          } -->
           <input [(ngModel)]="contactDatas.name" [class]="{ invalid: !name.valid && name.touched || submitted && !name.valid }" #name="ngModel"
             name="name" id="yourNameField" class="textField" type="text" required />
 
@@ -54,9 +54,9 @@
             }}</span>
           } @else {
           <span>{{ "contact.formFields.email.label" | translate }}</span>
-          } @if (email.valid) {
-          <img src="/assets/images/sections/contactMe/agreed.png" alt="" />
-          }
+          }<!--  @if (email.valid) {
+          <img src="assets/images/sections/contactMe/agreedChecked.png" alt="" />
+          } -->
           <input [(ngModel)]="contactDatas.email" [class]="{ invalid: !email.valid && email.touched || submitted && !email.valid }" #email="ngModel"
             name="email" id="yourEmailField" class="textField" type="text" required
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
