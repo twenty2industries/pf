@@ -16,13 +16,22 @@ click: any;
 
   constructor(private translate: TranslateService) { 
     this.changeLanguage;
+        const savedLanguage = localStorage.getItem('userLanguage');
+    if (savedLanguage) {
+      this.activeLanguage = savedLanguage;
+      this.translate.use(savedLanguage); 
+    }
   }
 
   menuOpen:boolean = false;
 
   changeLanguage(languageCode: string) {
     this.translate.use(languageCode);
+        localStorage.setItem('userLanguage', languageCode);
+
     this.setActiveLanguage(languageCode);
+              this.menuOpen = false;
+
   }
 
   setActiveLanguage(code: string) {
