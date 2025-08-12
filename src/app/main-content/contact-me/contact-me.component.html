@@ -40,11 +40,11 @@
           <img src="assets/images/sections/contactMe/agreedChecked.png" alt="" />
           } -->
           <input [(ngModel)]="contactDatas.name" [class]="{ invalid: !name.valid && name.touched || submitted && !name.valid }" #name="ngModel"
-            name="name" id="yourNameField" class="textField" type="text" required />
+            name="name" id="yourNameField" class="textField" type="text" required (ngModelChange)="onInputChange()" />
 
           <input [(ngModel)]="contactDatas.name" [class]="{ invalid: !name.valid && name.touched || submitted && !name.valid }" #name="ngModel"
             name="name" id="yourNameFieldMobile" class="textField" type="text" required
-            placeholder="{{ 'contact.formFields.name.label' | translate }}" />
+            placeholder="{{ 'contact.formFields.name.label' | translate }}" (ngModelChange)="onInputChange()" />
         </div>
 
         <div class="yourName">
@@ -59,12 +59,12 @@
           } -->
           <input [(ngModel)]="contactDatas.email" [class]="{ invalid: !email.valid && email.touched || submitted && !email.valid }" #email="ngModel"
             name="email" id="yourEmailField" class="textField" type="text" required
-            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" (ngModelChange)="onInputChange()" />
 
           <input [(ngModel)]="contactDatas.email" [class]="{ invalid: !email.valid && email.touched || submitted && !email.valid }" #email="ngModel"
             name="email" id="yourEmailFieldMobile" class="textField" type="text" required
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-            placeholder="{{ 'contact.formFields.email.label' | translate }}" />
+            placeholder="{{ 'contact.formFields.email.label' | translate }}" (ngModelChange)="onInputChange()" />
 
         </div>
       </div>
@@ -79,15 +79,15 @@
         }
 
         <input #message="ngModel" [(ngModel)]="contactDatas.message" [class]="{ invalid: !message.valid && message.touched  || submitted && !message.valid }"
-          name="message" id="yourMessageField" class="messageField" type="text" required />
+          name="message" id="yourMessageField" class="messageField" type="text" required (ngModelChange)="onInputChange()" />
         <input #message="ngModel" [(ngModel)]="contactDatas.message" [class]="{ invalid: !message.valid && message.touched  || submitted && !message.valid }"
           name="message" id="yourMessageFieldMobile" class="messageField" type="text" required
-          placeholder="{{ 'contact.formFields.message.label' | translate }}" />
+          placeholder="{{ 'contact.formFields.message.label' | translate }}" (ngModelChange)="onInputChange()" />
         <div class="checkArea">
           <div class="agreementArea">
             <div id="privacy">
               <input [(ngModel)]="contactDatas.checked" #privacyCheckbox="ngModel" [class.submitted]="submitted"
-                class="checkBox" type="checkbox" name="privacyCheckbox" required />
+                class="checkBox" type="checkbox" name="privacyCheckbox" required (ngModelChange)="onInputChange()" />
               <div class="privacyText">{{
                 'contact.formFields.message.privacyText' | translate
                 }} <a [routerLink]="'/privacy-policy'">{{
