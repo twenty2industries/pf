@@ -47,7 +47,7 @@ export class FeedbackComponent {
 
     {
       userNames: [{ name: 'Evelyn Marx' }],
-      projects: [{ name: 'El Polo Loco' }],
+      projects: [{ name: 'El Pollo Loco' }],
       backgroundImage: {
         path: '/images/sections/mySkills/bgFeedbackDefault.png',
         alt: 'Feedback background',

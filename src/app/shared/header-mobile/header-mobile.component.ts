@@ -12,7 +12,7 @@ export class HeaderMobileComponent {
   @Input() headerData!: HeaderData;
   activeLanguage: string = 'en';
   activeLink: string = '#hero';
-click: any;
+  click: any;
 
   constructor(private translate: TranslateService) { 
     this.changeLanguage;

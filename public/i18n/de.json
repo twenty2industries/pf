@@ -67,7 +67,7 @@
     },
     "feedback3": {
       "userName": "Evelyn Marx",
-      "projectName": "El Polo Loco",
+      "projectName": "El Pollo Loco",
       "text": "‘’Sie ist ein vertrauenswürdiger Teamplayer und hält Deadlines stressfrei aus. Strukturierte Arbeit und klarer Code.‘’",
       "link": ""
     }
@@ -79,14 +79,14 @@
   "PROJECTS": {
     "TITLE": "Meine Projekte",
     "EL_POLO_LOCO": {
-      "TITLE": "El Polo Loco",
+      "TITLE": "El Pollo Loco",
       "DURATION": "Dauer: 4 Wochen",
       "DESCRIPTION": "Jump-and-Run-Spiel inspiriert von klassischen Plattformspielen.",
       "BULLET_POINTS": {
         "ABOUT_TITLE": "Über das Projekt",
         "ABOUT_CONTENT": "Ein einfaches Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Flaschen zu finden, um gegen das Huhn zu kämpfen.",
         "WORK_PROCESS_TITLE": "Wie ich meinen Arbeitsprozess organisiert habe",
-        "WORK_PROCESS_CONTENT": "Für „El Polo Loco“ habe ich den Arbeitsprozess durch die Planung der Spielfunktionen in einzelne Schritte organisiert, wie Level-Design, Steuerung und Gegnerverhalten. So konnte ich strukturiert vorgehen, Prioritäten setzen und den Überblick behalten.",
+        "WORK_PROCESS_CONTENT": "Für „El Pollo Loco“ habe ich den Arbeitsprozess durch die Planung der Spielfunktionen in einzelne Schritte organisiert, wie Level-Design, Steuerung und Gegnerverhalten. So konnte ich strukturiert vorgehen, Prioritäten setzen und den Überblick behalten.",
         "LEARNINGS_TITLE": "Was ich gelernt habe",
         "LEARNINGS_CONTENT": "Dieses Projekt hat mir besonders gefallen, weil ich dadurch die Möglichkeit hatte, mich intensiv mit objektorientierter Programmierung in JavaScript auseinanderzusetzen und ein besseres Verständnis für Spiellogik und Game Loops zu entwickeln."
       },

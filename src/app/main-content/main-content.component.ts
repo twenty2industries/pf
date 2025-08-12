@@ -87,7 +87,7 @@ export class MainContentComponent {
   projectData: ProjectData = [
     {
       id: 1,
-      title: 'El Polo Loco',
+      title: 'El Pollo Loco',
       key: 'EL_POLO_LOCO',
       duration: 'Duration: 4 weeks',
       description: 'Jump-and-run game inspired by classic platformers.',
