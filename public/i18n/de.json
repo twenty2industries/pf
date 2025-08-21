@@ -53,22 +53,22 @@
     "mobileTitel2": "Hier ist, was meine Kolleginnen und Kollegen über mich sagen ",
     "linkText": "Im Profil verlinkt",
     "feedback1": {
-      "userName": "Sahra Müller",
+      "userName": "Pascal Fliedner",
       "project": "Project ",
-      "projectName": "DA Bubble",
-      "text": "‘’Claudia musste Inhalte entwickeln, formatieren und in Zusammenarbeit mit den Teammitgliedern liefern. Sie ist eine zuverlässige und freundliche Person.‘’",
+      "projectName": "Join",
+      "text": "‘’Burak bringt Struktur und Klarheit in jedes Projekt. Mit seiner analytischen Denkweise und seinem lösungsorientierten Ansatz hat er das Team enorm unterstützt. Die Zusammenarbeit mit ihm ist stets professionell und inspirierend.‘’",
       "link": ""
     },
     "feedback2": {
-      "userName": "James Rugman",
+      "userName": "Maik Bennefeld",
       "projectName": "Join",
-      "text": "‘’Claudia ist eine zuverlässige und freundliche Person. Arbeitet strukturiert und schreibt klaren Code. Ich empfehle sie als Kollegin.‘’",
+      "text": "‘’Überzeugt durch seine Kreativität und technische Expertise. Er bringt frische Ideen ein und setzt sie zuverlässig in sauberen Code um. Mit seiner positiven Art macht er jede Teamarbeit effizient und angenehm.‘’",
       "link": ""
     },
     "feedback3": {
-      "userName": "Evelyn Marx",
-      "projectName": "El Pollo Loco",
-      "text": "‘’Sie ist ein vertrauenswürdiger Teamplayer und hält Deadlines stressfrei aus. Strukturierte Arbeit und klarer Code.‘’",
+      "userName": "Irina Gorges",
+      "projectName": "Join",
+      "text": "‘’Er ist sehr engagiert und arbeitet sich mit großem Interesse in komplexe Themen ein. Seine Hilfsbereitschaft und Teamorientierung schaffen eine hervorragende Arbeitsatmosphäre. Er hat das Projekt durch seine klare Kommunikation und Verlässlichkeit entscheidend bereichert.‘’",
       "link": ""
     }
   },

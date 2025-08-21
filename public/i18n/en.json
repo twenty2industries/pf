@@ -61,24 +61,24 @@
     "mobileTitel2": "Here what my colleagues said about me",
 
     "feedback1": {
-      "userName": "Sahra Mueller",
+      "userName": "Pascal Fliedner",
       "project": "Project ",
-      "projectName": "DA Bubble",
-      "text": "‘’Claudia had to develop, format and deliver content in collaboration with the team members. She is a reliable and friendly person.‘’",
+      "projectName": "Join",
+      "text": "‘’Burak brings structure and clarity to every project. With his analytical mindset and solution-oriented approach, he has greatly supported the team. Working with him is always professional and inspiring.‘’",
       "link": "sius naros"
     },
 
     "feedback2": {
-      "userName": "James Rugman",
+      "userName": "Maik Bennefeld",
       "projectName": "Join",
-      "text": "‘’Claudia is a reliable and friendly person. Works in a structured way and write a clear code. I recommend her as a colleague.‘’",
+      "text": "‘’He impresses with his creativity and technical expertise. He contributes fresh ideas and reliably translates them into clean code. With his positive attitude, he makes every teamwork efficient and enjoyable.‘’",
       "link": "sius naros"
     },
 
     "feedback3": {
-      "userName": "Evelyn Marx",
-      "projectName": "El Pollo Loco",
-      "text": "‘’She is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code.‘’",
+      "userName": "Irina Gorges",
+      "projectName": "Join",
+      "text": "‘’He is highly committed and approaches complex topics with great interest. His helpfulness and team spirit create an excellent working atmosphere. Through his clear communication and reliability, he has made a decisive contribution to the project.‘’",
       "link": "sius naros"
     }
   },
