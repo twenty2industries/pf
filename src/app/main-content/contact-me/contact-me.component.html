@@ -17,11 +17,11 @@
         <div class="contactInfo">
           <div class="mailInfoInput">
             <div [class]="contactData.contactInfo.emailClass" alt=""></div>
-            E-mail: burak.bostanli.1&#64;web.de
+              E-mail: <a href="mailto:burak.bostanli.dev@gmail.com">burak.bostanli.dev&#64;gmail.com</a>
           </div>
           <div class="telInfoInput">
             <div [class]="contactData.contactInfo.phoneClass" alt=""></div>
-            Tel: {{ contactData.contactInfo.phone }}
+              Tel: <a [href]="'tel:' + contactData.contactInfo.phone">{{ contactData.contactInfo.phone }}</a>
           </div>
         </div>
       </div>

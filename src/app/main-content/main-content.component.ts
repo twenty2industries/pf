@@ -81,6 +81,26 @@ export class MainContentComponent {
         alt: 'JavaScript',
         skillText: 'JavaScript',
       },
+            {
+        path: 'images/sections/mySkills/gitDefault.png',
+        alt: 'git',
+        skillText: 'GIT',
+      },
+            {
+        path: 'assets/images/sections/mySkills/apiDefault.png',
+        alt: 'rest-api',
+        skillText: 'RestApi',
+      },
+                  {
+        path: 'images/sections/mySkills/scrumDefault.png',
+        alt: 'Scrum',
+        skillText: 'Scrum',
+      },
+                  {
+        path: 'assets/images/sections/mySkills/firebaseDefault.png',
+        alt: 'firebase',
+        skillText: 'Firebase',
+      },
     ],
   };
 
@@ -203,9 +223,9 @@ export class MainContentComponent {
   contactData: ContactFormData = {
     contactInfo: {
       emailClass: 'emailImage',
-      email: 'SIUSNAROS@test.de',
+      email: 'burak.bostanli.dev@gmail.com',
       phoneClass: 'phoneImage',
-      phone: '0157 123 456 68',
+      phone: '+49 172 589 856 4',
     },
     formFields: {
       name: {

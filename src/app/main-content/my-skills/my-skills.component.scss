@@ -109,6 +109,7 @@ span {
 }
 
 .icons {
+  flex-wrap: wrap;
   @include dFlex(center, center);
   flex-direction: row;
   gap: 3rem;
