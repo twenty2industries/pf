@@ -24,7 +24,7 @@
   "contact": {
     "headline": "Lassen sie uns zusammenarbeiten!",
     "title": "Kontakt",
-    "text": "Wenn sie nach einem engagierten Frontend-Entwickler suchen, der mit Leidenschaft und Präzision Ihre Projekte bereichert, zögern Sie nicht, mich zu kontaktieren. Ich freue mich auf Jobangebote, Freelance-Möglichkeiten oder gemeinsame Projekte, um zusammen erfolgreich zu sein.",
+    "text": "Wenn Sie einen engagierten Frontend-Entwickler suchen, der mit Leidenschaft und Präzision Ihre Projekte bereichert, freue ich mich über Jobangebote, Freelance-Möglichkeiten oder gemeinsame Projekte, um gemeinsam erfolgreich zu sein.",
     "required": {
       "email": "Deine E-Mail ist erforderlich.",
       "name": "Dein Name ist erforderlich.",
@@ -48,7 +48,7 @@
     "descriptionText": "Kontaktieren Sie mich gerne für Job-Angebote oder Möglichkeiten wie: ... Zeigen Sie, dass Sie Mehrwert durch Ihre Arbeit bringen."
   },
   "feedback": {
-    "titel": "Brauchen Sie einen Teamplayer? Hier ist, was meine Kolleginnen und Kollegen über mich sagen",
+    "titel": "Hier ist, was meine Kolleginnen und Kollegen über mich sagen",
     "mobileTitel": "Brauchen Sie einen Teamplayer?",
     "mobileTitel2": "Hier ist, was meine Kolleginnen und Kollegen über mich sagen ",
     "linkText": "Im Profil verlinkt",
@@ -57,7 +57,7 @@
       "project": "Project ",
       "projectName": "Join",
       "text": "‘’Burak bringt Struktur und Klarheit in jedes Projekt. Mit seiner analytischen Denkweise und seinem lösungsorientierten Ansatz hat er das Team enorm unterstützt. Die Zusammenarbeit mit ihm ist stets professionell und inspirierend.‘’",
-      "link": ""
+      "link": "https://www.linkedin.com/in/pascal-fliedner-2a6b1937b/"
     },
     "feedback2": {
       "userName": "Maik Bennefeld",
@@ -68,8 +68,8 @@
     "feedback3": {
       "userName": "Irina Gorges",
       "projectName": "Join",
-      "text": "‘’Er ist sehr engagiert und arbeitet sich mit großem Interesse in komplexe Themen ein. Seine Hilfsbereitschaft und Teamorientierung schaffen eine hervorragende Arbeitsatmosphäre. Er hat das Projekt durch seine klare Kommunikation und Verlässlichkeit entscheidend bereichert.‘’",
-      "link": ""
+      "text": "‘’Er ist sehr engagiert, arbeitet sich interessiert in komplexe Themen ein und überzeugt durch Hilfsbereitschaft und Teamorientierung. Seine klare Kommunikation und Verlässlichkeit bereichern jedes Projekt.‘’",
+      "link": "https://www.linkedin.com/in/irina-gorges-656486340/"
     }
   },
   "currentLearning": {
@@ -110,12 +110,12 @@
       "TITLE": "Laufendes Projekt",
       "DESCRIPTION": "Live-Formel-1-Betting-App mit virtuellen Coins und privaten Freundesgruppen.",
       "BULLET_POINTS": {
-        "ABOUT_TITLE": "Overtake™",
-        "ABOUT_CONTENT": "Eine soziale Formel-1-Live-Wett-App, bei der mit virtuellen Coins in privaten Freundesgruppen getippt wird. Die App enthält Echtzeitfunktionen, persönliche Profile und detaillierte Statistiken, z. B. Siegquoten gegen Freunde in rundenbasierten Duellen.",
+        "ABOUT_TITLE": "Overtake – Formula 1 Standings & Live Data™",
+        "ABOUT_CONTENT": "Eine Angular-App zur Darstellung von Fahrer- und Konstrukteurswertungen mit Fullcards für detaillierte Fahrerinfos. Geplant sind Features wie Rennkalender, Sessions und Live-Daten.",
         "WORK_PROCESS_TITLE": "So habe ich meinen Arbeitsprozess organisiert",
-        "WORK_PROCESS_CONTENT": "Aktuell entwickle ich die App mit React und achte dabei auf eine strukturierte Komponentenarchitektur. Ich lege besonderen Wert auf Wiederverwendbarkeit, eine klare Ordnerstruktur und konsistentes Styling mit modularem Code. Durch vorhersehbares State-Management und laufende Dokumentation sorge ich dafür, dass die Anwendung auch in der Weiterentwicklung übersichtlich und wartbar bleibt.",
+        "WORK_PROCESS_CONTENT": "Fokus auf saubere Architektur mit Angular 19, RxJS und manuell gepflegtem SCSS. Ich vertiefe API-Integration, Firestore-Nutzung und responsives Design, um ein performantes Portfolio-Projekt umzusetzen.",
         "LEARNINGS_TITLE": "Meine Arbeitserfahrung",
-        "LEARNINGS_CONTENT": "Dies ist mein erstes Projekt mit React. Ich lerne gerade die Grundlagen der komponentenbasierten Entwicklung, des State-Managements und der dynamischen Benutzeroberflächen. Das Projekt unterstützt mich dabei, eine skalierbare Codebasis aufzubauen und modular zu denken."
+        "LEARNINGS_CONTENT": "Im Rahmen dieses Projekts sammle ich praktische Erfahrung in der Entwicklung mit Angular 19. Dabei arbeite ich intensiv mit RxJS-Streams, Observables und Firebase, um Daten performant zu verarbeiten. Gleichzeitig vertiefe ich meine Kenntnisse in responsivem Design, Animationen und dem Aufbau einer klar strukturierten Frontend-Architektur."
       },
       "URL": "Jetzt ausprobieren"
     }

@@ -187,6 +187,7 @@ h1 {
 }
 
 .content {
+  height: 30em;
   @include dFlex(center, center);
   background-color: #2d383f;
   width: 100%;
@@ -202,6 +203,11 @@ h1 {
     flex-direction: column-reverse;
     align-items: center;
   }
+
+  .content {
+  height: unset;
+
+}
 }
 
 @media (max-width: 920px) {
@@ -229,6 +235,8 @@ h1 {
   }
 
   .content {
+      height: unset;
+
     flex-direction: column;
     border-bottom-left-radius: 4rem;
     border-bottom-right-radius: 4rem;

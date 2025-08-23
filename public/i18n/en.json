@@ -124,12 +124,12 @@
       "TITLE": "Ongoing Project",
       "DESCRIPTION": "Live F1 betting app using virtual coins and private friend pools.",
       "BULLET_POINTS": {
-        "ABOUT_TITLE": "Overtake™",
-        "ABOUT_CONTENT": "A social Formula 1 live betting app where users bet with virtual coins in private friend pools. It includes real-time features, personal profiles, and detailed statistics such as win rates against other friends in a round-based format.",
+        "ABOUT_TITLE": "Overtake™ – Formula 1 Standings & Live Data",
+        "ABOUT_CONTENT": "An Angular app for displaying driver and constructor standings with fullcards for detailed driver information. Planned features include a race calendar, sessions, and live data.",
         "WORK_PROCESS_TITLE": "How I have organised my work process",
-        "WORK_PROCESS_CONTENT": "I am currently developing the app using React, focusing on a well-structured component architecture. I prioritize reusability, a clear folder structure, and consistent styling with modular code. Through predictable state management and continuous documentation, I ensure the application remains maintainable and easy to extend as development progresses.",
+        "WORK_PROCESS_CONTENT": "Focus on clean architecture with Angular 19, RxJS, and manually maintained SCSS. I am deepening my knowledge of API integration, Firestore usage, and responsive design to deliver a high-performance portfolio project.",
         "LEARNINGS_TITLE": "My work experience",
-        "LEARNINGS_CONTENT": "This is my first project with React. I am currently learning the fundamentals of component-based development, state management, and dynamic user interfaces. The project is helping me build a scalable codebase and think modularly."
+        "LEARNINGS_CONTENT": "As part of this project, I am gaining practical experience in development with Angular 19. I work extensively with RxJS streams, Observables, and Firebase to handle data efficiently. At the same time, I am strengthening my skills in responsive design, animations, and building a well-structured frontend architecture."
       },
       "URL": "Try it now"
     }
